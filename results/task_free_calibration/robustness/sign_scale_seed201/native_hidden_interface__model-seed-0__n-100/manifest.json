@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "protocol_version": "1.0.0",
+  "run_id": "native_hidden_interface__model-seed-0__n-100",
+  "method": "native_hidden_interface",
+  "description": "sign flips and anisotropic scale only, no axis permutation",
+  "model_seed": "0",
+  "official_sequence_seed": 0,
+  "sequence_seed_used": 1729,
+  "num_sequences": 100,
+  "started_utc": "2026-09-03T13:41:15.100494+00:00",
+  "protocol": {
+    "path": "/home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/task_free_calibration/robustness_sign_scale_seed201.generated.json",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 3301,
+    "mtime_ns": 1788442875075034733,
+    "sha256": "66b2e86801187e21d01620f34a8e15cea7911a2ef4e38349d5512c7029152ce4"
+  },
+  "evaluator": {
+    "path": "/home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 21003,
+    "mtime_ns": 1788439149585406085,
+    "sha256": "2c830f0aac15e2268382f7349394c38dd300d830057862a77f9d27e4822c2991"
+  },
+  "server": {
+    "path": "/home/alam/vla_thesis/openvla-oft/calvin_openvla_oft_server.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 33721,
+    "mtime_ns": 1788337236362069096,
+    "sha256": "78c7c23eecee8799ee093f85afd65143065a52efded3d8bf7da244eac32fe04b"
+  },
+  "checkpoint": {
+    "path": "/home/alam/vla_thesis/final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt",
+    "exists": true,
+    "kind": "directory",
+    "size_bytes": 4096,
+    "mtime_ns": 1788441477347332250
+  },
+  "repositories": {
+    "benchmark": {
+      "root": "/home/alam/vla_thesis/vla-deployment-benchmark",
+      "revision": "4251494585ebfb6ed45221f140dd11716a871a4e",
+      "dirty": true
+    },
+    "calvin": {
+      "root": "/home/alam/vla_thesis/calvin",
+      "revision": "fa03f01f19c65920e18cf37398a9ce859274af76",
+      "dirty": true
+    },
+    "openvla_oft": {
+      "root": "/home/alam/vla_thesis/openvla-oft",
+      "revision": "e4287e94541f459edc4feabc4e181f537cd569a8",
+      "dirty": true
+    }
+  },
+  "commands": {
+    "server": "conda run --no-capture-output -n openvla-oft python -u /home/alam/vla_thesis/openvla-oft/calvin_openvla_oft_server.py",
+    "client": "conda run --no-capture-output -n calvin_venv python -u /home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py --dataset_path /home/alam/vla_thesis/calvin/dataset/task_D_D --eval_log_dir /home/alam/vla_thesis/vla-deployment-benchmark/results/task_free_calibration/robustness/sign_scale_seed201/native_hidden_interface__model-seed-0__n-100 --device 0 --num_sequences 100 --sequence_seed 1729 --custom_model"
+  },
+  "server_environment": {
+    "CALVIN_ACTION_SCALE": "1.0",
+    "CALVIN_CHUNK_SIZE": "8",
+    "CALVIN_GRIPPER_MODE": "normal",
+    "CALVIN_NUM_IMAGES_IN_INPUT": "2",
+    "CALVIN_SAVE_VIDEO": "0",
+    "CALVIN_STATIC_ONLY": "0",
+    "CALVIN_USE_PROPRIO": "1",
+    "OPENVLA_TASK_SUITE": "calvin_task_d",
+    "CALVIN_NATIVE_POLICY": "1",
+    "CALVIN_ADAPTER_PATH": "",
+    "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+    "CALVIN_TASK_FREE_CALIBRATION_PATH": "",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OPENVLA_CHECKPOINT": "/home/alam/vla_thesis/final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+  },
+  "client_environment": {
+    "CALVIN_DEPLOYMENT_ACTION_MATRIX": "[[-0.75, 0, 0, 0, 0, 0], [0, 0.5, 0, 0, 0, 0], [0, 0, -1.15, 0, 0, 0], [0, 0, 0, 0.85, 0, 0], [0, 0, 0, 0, -0.6, 0], [0, 0, 0, 0, 0, 1.1]]",
+    "CALVIN_DEPLOYMENT_GRIPPER_POLARITY": "1"
+  },
+  "preexisting_gpu_processes": [],
+  "return_code": 0,
+  "finished_utc": "2026-09-03T14:00:26.064903+00:00",
+  "memory": null,
+  "gpu_released_after_cleanup": true
+}

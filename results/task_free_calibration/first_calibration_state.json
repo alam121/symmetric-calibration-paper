@@ -1,0 +1,399 @@
+{
+  "status": "first_closed_loop_iteration_required",
+  "stage": "first_calibration_complete",
+  "created_utc": "2026-09-02T07:43:33.300073+00:00",
+  "supervision_boundary": {
+    "language": false,
+    "task_ids": false,
+    "expert_actions": false,
+    "rewards_or_success": false
+  },
+  "updated_utc": "2026-09-02T08:06:09.158481+00:00",
+  "command": [
+    "/home/alam/miniconda3/bin/python",
+    "/home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/calvin_baselines/run_protocol.py",
+    "--protocol",
+    "/home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/task_free_calibration/closed_loop_protocol.json",
+    "--workspace",
+    "/home/alam/vla_thesis",
+    "--method",
+    "task_free_full_interface",
+    "--model-seed",
+    "101",
+    "--num-sequences",
+    "20",
+    "--sequence-seed",
+    "1729",
+    "--skip-memory"
+  ],
+  "diagnostic": {
+    "direct_source": {
+      "avg_seq_len": 0.05,
+      "chain_sr": {
+        "1": 0.05,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "task_info": {
+        "close_drawer": {
+          "success": 1,
+          "total": 1
+        },
+        "push_red_block_right": {
+          "success": 0,
+          "total": 2
+        },
+        "turn_on_lightbulb": {
+          "success": 0,
+          "total": 1
+        },
+        "push_blue_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "rotate_red_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "push_blue_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "open_drawer": {
+          "success": 0,
+          "total": 4
+        },
+        "rotate_blue_block_right": {
+          "success": 0,
+          "total": 2
+        },
+        "lift_blue_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "push_pink_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "lift_red_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "rotate_pink_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "turn_on_led": {
+          "success": 0,
+          "total": 1
+        },
+        "push_red_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "move_slider_left": {
+          "success": 0,
+          "total": 2
+        }
+      }
+    },
+    "task_free_action_only": {
+      "avg_seq_len": 0.05,
+      "chain_sr": {
+        "1": 0.05,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "task_info": {
+        "move_slider_left": {
+          "success": 1,
+          "total": 1
+        },
+        "push_red_block_right": {
+          "success": 0,
+          "total": 2
+        },
+        "turn_on_lightbulb": {
+          "success": 0,
+          "total": 1
+        },
+        "push_blue_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "rotate_red_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "push_blue_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "open_drawer": {
+          "success": 0,
+          "total": 4
+        },
+        "rotate_blue_block_right": {
+          "success": 0,
+          "total": 2
+        },
+        "lift_blue_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "push_pink_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "lift_red_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "rotate_pink_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "turn_on_led": {
+          "success": 0,
+          "total": 1
+        },
+        "push_red_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "lift_pink_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "close_drawer": {
+          "success": 0,
+          "total": 1
+        }
+      }
+    },
+    "task_free_proprio_only": {
+      "avg_seq_len": 0.0,
+      "chain_sr": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "task_info": {
+        "push_red_block_right": {
+          "success": 0,
+          "total": 2
+        },
+        "turn_on_lightbulb": {
+          "success": 0,
+          "total": 1
+        },
+        "push_blue_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "rotate_red_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "push_blue_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "open_drawer": {
+          "success": 0,
+          "total": 4
+        },
+        "rotate_blue_block_right": {
+          "success": 0,
+          "total": 2
+        },
+        "lift_blue_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "push_pink_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "lift_red_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "rotate_pink_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "turn_on_led": {
+          "success": 0,
+          "total": 1
+        },
+        "push_red_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "move_slider_left": {
+          "success": 0,
+          "total": 1
+        },
+        "close_drawer": {
+          "success": 0,
+          "total": 1
+        }
+      }
+    },
+    "task_free_calibrated": {
+      "avg_seq_len": 0.0,
+      "chain_sr": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "task_info": {
+        "push_red_block_right": {
+          "success": 0,
+          "total": 2
+        },
+        "turn_on_lightbulb": {
+          "success": 0,
+          "total": 1
+        },
+        "push_blue_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "rotate_red_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "push_blue_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "open_drawer": {
+          "success": 0,
+          "total": 4
+        },
+        "rotate_blue_block_right": {
+          "success": 0,
+          "total": 2
+        },
+        "lift_blue_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "push_pink_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "lift_red_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "rotate_pink_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "turn_on_led": {
+          "success": 0,
+          "total": 1
+        },
+        "push_red_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "move_slider_left": {
+          "success": 0,
+          "total": 1
+        },
+        "close_drawer": {
+          "success": 0,
+          "total": 1
+        }
+      }
+    },
+    "task_free_full_interface": {
+      "avg_seq_len": 0.0,
+      "chain_sr": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "task_info": {
+        "push_red_block_right": {
+          "success": 0,
+          "total": 2
+        },
+        "turn_on_lightbulb": {
+          "success": 0,
+          "total": 1
+        },
+        "push_blue_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "rotate_red_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "push_blue_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "open_drawer": {
+          "success": 0,
+          "total": 4
+        },
+        "rotate_blue_block_right": {
+          "success": 0,
+          "total": 2
+        },
+        "lift_blue_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "push_pink_block_right": {
+          "success": 0,
+          "total": 1
+        },
+        "lift_red_block_table": {
+          "success": 0,
+          "total": 1
+        },
+        "rotate_pink_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "turn_on_led": {
+          "success": 0,
+          "total": 1
+        },
+        "push_red_block_left": {
+          "success": 0,
+          "total": 1
+        },
+        "move_slider_left": {
+          "success": 0,
+          "total": 1
+        },
+        "close_drawer": {
+          "success": 0,
+          "total": 1
+        }
+      }
+    }
+  },
+  "best_calibration_condition": "task_free_action_only",
+  "strictly_improved": false,
+  "development": null,
+  "calibrator": "/home/alam/vla_thesis/vla-deployment-benchmark/data/task_free_calibration/calibrator_seed101.json"
+}

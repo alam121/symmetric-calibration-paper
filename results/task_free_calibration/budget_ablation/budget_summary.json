@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "evaluation_sequences": 20,
+  "sequence_seed": 1729,
+  "budgets": {
+    "64": {
+      "avg_seq_len": 0.45,
+      "depth_1": 0.35,
+      "depth_2": 0.05
+    },
+    "320": {
+      "avg_seq_len": 0.35,
+      "depth_1": 0.3,
+      "depth_2": 0.05
+    },
+    "640": {
+      "avg_seq_len": 0.4,
+      "depth_1": 0.35,
+      "depth_2": 0.05
+    },
+    "1280": {
+      "avg_seq_len": 0.4,
+      "depth_1": 0.35,
+      "depth_2": 0.05
+    }
+  }
+}

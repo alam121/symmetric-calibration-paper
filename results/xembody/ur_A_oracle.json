@@ -1,0 +1,69 @@
+{
+ "robot": "ur10e",
+ "task": "A",
+ "policy": "expert",
+ "map": "None",
+ "success_rate": 0.0,
+ "episodes": [
+  {
+   "episode": 0,
+   "success": false,
+   "steps": 141,
+   "obj_mm": [
+    5.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 1,
+   "success": false,
+   "steps": 139,
+   "obj_mm": [
+    5.0,
+    -7.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 2,
+   "success": false,
+   "steps": 138,
+   "obj_mm": [
+    6.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 3,
+   "success": false,
+   "steps": 138,
+   "obj_mm": [
+    6.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 4,
+   "success": false,
+   "steps": 136,
+   "obj_mm": [
+    1.0,
+    -3.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 5,
+   "success": false,
+   "steps": 143,
+   "obj_mm": [
+    6.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+Task A, layout shift 0/3/6/9 cm, 50 paired episodes (Franka | UR10e matched)
+variant                                        0 cm             3 cm             6 cm             9 cm
+old: absolute, +-2 cm demos             49 | 50         24 | 24          0 | 0           0 | 0    
+V1 relative obs                         49 | 50         49 | 50         49 | 50         49 | 50   
+V2 absolute + translation aug           49 | 50         49 | 50         49 | 50         49 | 50   
+V3 relative + layout-varied demos       50 | 50         50 | 50         50 | 50         50 | 50   
+
+Controls and extended shifts (50 paired episodes)
+variant / condition            0     3     6     9    12    15 cm
+V1_relative  franka         49    49    49    49    49    49
+V1_relative  matched        50    50    50    50    50    49
+V1_relative  direct          0     0     0     0     -     -
+V1_relative  mismatched      0     0     0     0     -     -
+V3_relgrid   franka         50    50    50    50    50    50
+V3_relgrid   matched        50    50    50    50    50    50
+V3_relgrid   direct          0     0     0     0     -     -
+V3_relgrid   mismatched      0     0     0     0     -     -
+expert (Franka)                   -     -     -     -    50    50

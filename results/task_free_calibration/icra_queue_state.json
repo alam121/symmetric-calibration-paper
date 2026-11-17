@@ -1,0 +1,12 @@
+{
+  "updated_utc": "2026-09-03T10:02:52.261076+00:00",
+  "stage": "complete",
+  "jobs": [
+    "budget 64 @ n=100",
+    "budget 320 @ n=100",
+    "budget 640 @ n=100",
+    "action-head clean",
+    "action-head hidden",
+    "action-head calibrated"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "protocol_version": "1.0.0",
+  "run_id": "trace_clean__model-seed-0__n-12",
+  "method": "trace_clean",
+  "description": "Frozen CALVIN-native VLA under its original actuator interface.",
+  "model_seed": "0",
+  "official_sequence_seed": 0,
+  "sequence_seed_used": 1729,
+  "num_sequences": 12,
+  "started_utc": "2026-09-04T16:02:08.629630+00:00",
+  "protocol": {
+    "path": "/home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/task_free_calibration/mechanism_trace_protocol.generated.json",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 4062,
+    "mtime_ns": 1788529290812584081,
+    "sha256": "c1e32d72203edf148c8b91dbb9653592f243f31d6dcaf269c7012f2933b98bc4"
+  },
+  "evaluator": {
+    "path": "/home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 26066,
+    "mtime_ns": 1788537718508836737,
+    "sha256": "a79ce3c1b054656115aac2fb7ebe84eb0dab0a07fa6398d562f217a9b70545db"
+  },
+  "server": {
+    "path": "/home/alam/vla_thesis/openvla-oft/calvin_openvla_oft_server.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 33721,
+    "mtime_ns": 1788337236362069096,
+    "sha256": "78c7c23eecee8799ee093f85afd65143065a52efded3d8bf7da244eac32fe04b"
+  },
+  "checkpoint": {
+    "path": "/home/alam/vla_thesis/final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt",
+    "exists": true,
+    "kind": "directory",
+    "size_bytes": 4096,
+    "mtime_ns": 1788534533785790631
+  },
+  "repositories": {
+    "benchmark": {
+      "root": "/home/alam/vla_thesis/vla-deployment-benchmark",
+      "revision": "4251494585ebfb6ed45221f140dd11716a871a4e",
+      "dirty": true
+    },
+    "calvin": {
+      "root": "/home/alam/vla_thesis/calvin",
+      "revision": "fa03f01f19c65920e18cf37398a9ce859274af76",
+      "dirty": true
+    },
+    "openvla_oft": {
+      "root": "/home/alam/vla_thesis/openvla-oft",
+      "revision": "e4287e94541f459edc4feabc4e181f537cd569a8",
+      "dirty": true
+    }
+  },
+  "commands": {
+    "server": "conda run --no-capture-output -n openvla-oft python -u /home/alam/vla_thesis/openvla-oft/calvin_openvla_oft_server.py",
+    "client": "conda run --no-capture-output -n calvin_venv python -u /home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py --dataset_path /home/alam/vla_thesis/calvin/dataset/task_D_D --eval_log_dir /home/alam/vla_thesis/vla-deployment-benchmark/results/task_free_calibration/mechanism_trace/trace_clean__model-seed-0__n-12 --device 0 --num_sequences 12 --sequence_seed 1729 --custom_model"
+  },
+  "server_environment": {
+    "CALVIN_ACTION_SCALE": "1.0",
+    "CALVIN_CHUNK_SIZE": "8",
+    "CALVIN_GRIPPER_MODE": "normal",
+    "CALVIN_NUM_IMAGES_IN_INPUT": "2",
+    "CALVIN_SAVE_VIDEO": "0",
+    "CALVIN_STATIC_ONLY": "0",
+    "CALVIN_USE_PROPRIO": "1",
+    "OPENVLA_TASK_SUITE": "calvin_task_d",
+    "CALVIN_NATIVE_POLICY": "1",
+    "CALVIN_ADAPTER_PATH": "",
+    "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+    "CALVIN_TASK_FREE_CALIBRATION_PATH": "",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OPENVLA_CHECKPOINT": "/home/alam/vla_thesis/final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+  },
+  "client_environment": {
+    "CALVIN_ACTION_TRACE": "/tmp/claude-1000/-home-alam-manipulatorsdatepalm/efbc384f-db38-4602-9c78-2bb24b608a4e/scratchpad/trace_clean.json"
+  },
+  "preexisting_gpu_processes": [],
+  "return_code": 0,
+  "finished_utc": "2026-09-04T16:06:05.416529+00:00",
+  "memory": null,
+  "gpu_released_after_cleanup": true
+}

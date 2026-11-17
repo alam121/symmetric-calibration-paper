@@ -1,0 +1,89 @@
+{
+ "robot": "franka",
+ "task": "B",
+ "policy": "/home/alam/sim2real_runs/xembody/policy_floor_B.pt",
+ "map": "None",
+ "success_rate": 0.9,
+ "episodes": [
+  {
+   "episode": 0,
+   "success": false,
+   "steps": 400,
+   "off_mm": 0.4,
+   "yaw_err_deg": 14.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 1,
+   "success": true,
+   "steps": 271,
+   "off_mm": 0.7,
+   "yaw_err_deg": 0.1,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 2,
+   "success": true,
+   "steps": 294,
+   "off_mm": 0.7,
+   "yaw_err_deg": 0.1,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 3,
+   "success": true,
+   "steps": 320,
+   "off_mm": 1.5,
+   "yaw_err_deg": 0.6,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 4,
+   "success": true,
+   "steps": 222,
+   "off_mm": 1.5,
+   "yaw_err_deg": 0.2,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 5,
+   "success": true,
+   "steps": 249,
+   "off_mm": 0.9,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 6,
+   "success": true,
+   "steps": 259,
+   "off_mm": 0.8,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 7,
+   "success": true,
+   "steps": 327,
+   "off_mm": 0.6,
+   "yaw_err_deg": 0.1,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 8,
+   "success": true,
+   "steps": 286,
+   "off_mm": 1.0,
+   "yaw_err_deg": 0.1,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 9,
+   "success": true,
+   "steps": 228,
+   "off_mm": 1.1,
+   "yaw_err_deg": 0.1,
+   "tilt_deg": 0.0
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+  "benchmark": "CALVIN controlled hidden deployment-interface calibration",
+  "dataset": "calvin/dataset/task_D_D",
+  "environments": {
+    "calvin": "calvin_venv",
+    "policy": "openvla-oft"
+  },
+  "fixed_policy_settings": {
+    "CALVIN_ACTION_SCALE": "1.0",
+    "CALVIN_CHUNK_SIZE": "8",
+    "CALVIN_GRIPPER_MODE": "normal",
+    "CALVIN_NUM_IMAGES_IN_INPUT": "2",
+    "CALVIN_SAVE_VIDEO": "0",
+    "CALVIN_STATIC_ONLY": "0",
+    "CALVIN_USE_PROPRIO": "1",
+    "OPENVLA_TASK_SUITE": "calvin_task_d"
+  },
+  "gpu": 0,
+  "methods": {
+    "ttl_calib_ft_N250_10000": {
+      "kind": "server",
+      "description": "Target-task learning, calib_ft, 250 demos, checkpoint 10000.",
+      "model_seeds": {
+        "0": "/home/alam/vla_thesis/final_results/target_task_learning_runs/ttl_calib_ft_N250--10000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": ""
+      },
+      "client_environment": {
+        "CALVIN_CLIENT_CALIBRATION_PATH": "/home/alam/vla_thesis/vla-deployment-benchmark/data/task_free_calibration/calibrator_seed101.json",
+        "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark"
+      }
+    }
+  },
+  "minimum_independent_training_seeds": 3,
+  "num_sequences": 1000,
+  "official_sequence_seed": 0,
+  "paths": {
+    "evaluator": "calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "results_root": "vla-deployment-benchmark/results/task_free_calibration/target_task_learning",
+    "server": "openvla-oft/calvin_openvla_oft_server.py"
+  },
+  "protocol_version": "1.0.0",
+  "sequence_length": 5
+}

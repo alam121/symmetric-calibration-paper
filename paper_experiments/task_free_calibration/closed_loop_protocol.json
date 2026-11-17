@@ -1,0 +1,122 @@
+{
+  "benchmark": "CALVIN ABC->D language-conditioned long-horizon evaluation",
+  "dataset": "calvin/dataset/task_D_D",
+  "environments": {
+    "calvin": "calvin_venv",
+    "policy": "openvla-oft"
+  },
+  "fixed_policy_settings": {
+    "CALVIN_ACTION_SCALE": "1.0",
+    "CALVIN_CHUNK_SIZE": "8",
+    "CALVIN_GRIPPER_MODE": "normal",
+    "CALVIN_NUM_IMAGES_IN_INPUT": "2",
+    "CALVIN_SAVE_VIDEO": "0",
+    "CALVIN_STATIC_ONLY": "0",
+    "CALVIN_USE_PROPRIO": "1",
+    "OPENVLA_TASK_SUITE": "libero_spatial"
+  },
+  "gpu": 0,
+  "methods": {
+    "direct_source": {
+      "kind": "server",
+      "checkpoint": "moojink/openvla-7b-oft-finetuned-libero-spatial",
+      "description": "Frozen LIBERO OpenVLA-OFT with the uncalibrated deployment interface.",
+      "model_seeds": {
+        "official": null
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "0",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "",
+        "CALVIN_STATE_MODE": "centered"
+      }
+    },
+    "task_free_calibrated": {
+      "kind": "server",
+      "checkpoint": "moojink/openvla-7b-oft-finetuned-libero-spatial",
+      "description": "Frozen LIBERO OpenVLA-OFT with an interface learned only from random task-free source/target transitions.",
+      "model_seeds": {
+        "101": "vla-deployment-benchmark/data/task_free_calibration/calibrator_seed101.json"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "0",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "__MODEL_CHECKPOINT__",
+        "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark",
+        "CALVIN_TASK_FREE_CALIBRATE_ACTION": "1",
+        "CALVIN_TASK_FREE_CALIBRATE_PROPRIO": "1",
+        "CALVIN_TASK_FREE_CALIBRATE_VISION": "0",
+        "CALVIN_STATE_MODE": "calibrated"
+      }
+    },
+    "task_free_action_only": {
+      "kind": "server",
+      "checkpoint": "moojink/openvla-7b-oft-finetuned-libero-spatial",
+      "description": "Frozen source VLA with only the task-free local-dynamics action interface.",
+      "model_seeds": {
+        "101": "vla-deployment-benchmark/data/task_free_calibration/calibrator_seed101.json"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "0",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "__MODEL_CHECKPOINT__",
+        "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark",
+        "CALVIN_TASK_FREE_CALIBRATE_ACTION": "1",
+        "CALVIN_TASK_FREE_CALIBRATE_PROPRIO": "0",
+        "CALVIN_TASK_FREE_CALIBRATE_VISION": "0",
+        "CALVIN_STATE_MODE": "centered"
+      }
+    },
+    "task_free_proprio_only": {
+      "kind": "server",
+      "checkpoint": "moojink/openvla-7b-oft-finetuned-libero-spatial",
+      "description": "Frozen source VLA with only task-free proprioception distribution alignment.",
+      "model_seeds": {
+        "101": "vla-deployment-benchmark/data/task_free_calibration/calibrator_seed101.json"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "0",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "__MODEL_CHECKPOINT__",
+        "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark",
+        "CALVIN_TASK_FREE_CALIBRATE_ACTION": "0",
+        "CALVIN_TASK_FREE_CALIBRATE_PROPRIO": "1",
+        "CALVIN_TASK_FREE_CALIBRATE_VISION": "0",
+        "CALVIN_STATE_MODE": "calibrated"
+      }
+    },
+    "task_free_full_interface": {
+      "kind": "server",
+      "checkpoint": "moojink/openvla-7b-oft-finetuned-libero-spatial",
+      "description": "Frozen source VLA with task-free action, proprioception, and RGB moment calibration.",
+      "model_seeds": {
+        "101": "vla-deployment-benchmark/data/task_free_calibration/calibrator_seed101.json"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "0",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "__MODEL_CHECKPOINT__",
+        "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark",
+        "CALVIN_TASK_FREE_CALIBRATE_ACTION": "1",
+        "CALVIN_TASK_FREE_CALIBRATE_PROPRIO": "1",
+        "CALVIN_TASK_FREE_CALIBRATE_VISION": "1",
+        "CALVIN_STATE_MODE": "calibrated"
+      }
+    }
+  },
+  "minimum_independent_training_seeds": 3,
+  "num_sequences": 1000,
+  "official_sequence_seed": 0,
+  "paths": {
+    "evaluator": "calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "results_root": "vla-deployment-benchmark/results/task_free_calibration/closed_loop",
+    "server": "openvla-oft/calvin_openvla_oft_server.py"
+  },
+  "protocol_version": "1.0.0",
+  "sequence_length": 5
+}

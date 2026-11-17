@@ -1,0 +1,28 @@
+arm                              E_rel  |s*-1|   E_dir  E_trans    E_rot  E_cross    D1 %     avg
+--------------------------------------------------------------------------------------------------------
+hidden (no repair)              0.9628  0.7378  2.3591   0.9550   0.9721   0.0000    2.0u  0.020u
+task-free fitted                0.0659  0.0067  0.0660   0.0311   0.0393   0.0558   90.0u  2.900u
+oracle (exact inverse)          0.0000  0.0000  0.0000   0.0000   0.0000   0.0000    82.0   2.740
+demo-fitted W_t                 0.1835  0.1562  0.0832   0.1613   0.1990   0.0381    85.0   2.660
+demo-fitted + gain match k      0.0829  0.0067  0.0832   0.0266   0.1091   0.0327    85.0   2.690
+phi body_body (matched)         0.0633  0.0056  0.0634   0.0313   0.0458   0.0501    86.0   2.840
+phi world_body (mismatched)     1.1480  0.6603  2.7647   0.0309   1.6979   0.0650    75.0   1.140
+phi body_world (mismatched)     1.1502  0.6621  2.7835   0.0310   1.7011   0.0650    73.0   1.100
+
+arm                            |     TRANSLATION      |       ROTATION      
+                               |     gain   residual |     gain   residual
+------------------------------------------------------------------------------
+hidden (no repair)             |   0.2513     2.3592 |   0.2753     2.3532
+task-free fitted               |   1.0043     0.0307 |   0.9801     0.0346
+oracle (exact inverse)         |   1.0000     0.0000 |   1.0000     0.0000
+demo-fitted W_t                |   1.1584     0.0262 |   1.1535     0.1097
+demo-fitted + gain match k     |   0.9952     0.0262 |   0.9910     0.1097
+phi body_body (matched)        |   1.0029     0.0311 |   0.9842     0.0437
+phi world_body (mismatched)    |   1.0028     0.0307 |  -0.4529     1.9396
+phi body_world (mismatched)    |   1.0027     0.0308 |  -0.4567     1.9234
+gain 1.0 = correct magnitude; a NEGATIVE gain means that block is inverted.
+
+directional components, plain vs gain-matched: rel diff 1.946e-16
+The gain-match changed only the gain term, so the equal closed-loop score is forced.
+
+u = read from results.json; no per-sequence log, so not pairable.

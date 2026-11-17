@@ -1,0 +1,93 @@
+{
+  "status": "complete",
+  "protocol_version": "1.0.0",
+  "run_id": "budget_640__model-seed-0__n-100",
+  "method": "budget_640",
+  "description": "Frozen VLA calibrated from 640 task-free target transitions.",
+  "model_seed": "0",
+  "official_sequence_seed": 0,
+  "sequence_seed_used": 1729,
+  "num_sequences": 100,
+  "started_utc": "2026-09-05T04:11:59.025066+00:00",
+  "protocol": {
+    "path": "/home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/task_free_calibration/budget_ablation_protocol.generated.json",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 4151,
+    "mtime_ns": 1788417469112673422,
+    "sha256": "0ade95c67a84dcdeba570738ed35fdeeae8692be2e8cdc3fcd2e54bd9fc4bf95"
+  },
+  "evaluator": {
+    "path": "/home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 27681,
+    "mtime_ns": 1788554906301142945,
+    "sha256": "4cfe93ae38a38f4bb3becaae8c2d3fd9b6eb4be297c58382f5375db62c434152"
+  },
+  "server": {
+    "path": "/home/alam/vla_thesis/openvla-oft/calvin_openvla_oft_server.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 35343,
+    "mtime_ns": 1788562513606986791,
+    "sha256": "7a6276171bf376bb41246defc9928fff6f8483a43260bc67e334702e30dbfabb"
+  },
+  "checkpoint": {
+    "path": "/home/alam/vla_thesis/final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt",
+    "exists": true,
+    "kind": "directory",
+    "size_bytes": 4096,
+    "mtime_ns": 1788579787711897612
+  },
+  "repositories": {
+    "benchmark": {
+      "root": "/home/alam/vla_thesis/vla-deployment-benchmark",
+      "revision": "4251494585ebfb6ed45221f140dd11716a871a4e",
+      "dirty": true
+    },
+    "calvin": {
+      "root": "/home/alam/vla_thesis/calvin",
+      "revision": "fa03f01f19c65920e18cf37398a9ce859274af76",
+      "dirty": true
+    },
+    "openvla_oft": {
+      "root": "/home/alam/vla_thesis/openvla-oft",
+      "revision": "e4287e94541f459edc4feabc4e181f537cd569a8",
+      "dirty": true
+    }
+  },
+  "commands": {
+    "server": "conda run --no-capture-output -n openvla-oft python -u /home/alam/vla_thesis/openvla-oft/calvin_openvla_oft_server.py",
+    "client": "conda run --no-capture-output -n calvin_venv python -u /home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py --dataset_path /home/alam/vla_thesis/calvin/dataset/task_D_D --eval_log_dir /home/alam/vla_thesis/vla-deployment-benchmark/results/task_free_calibration/budget_ablation/budget_640__model-seed-0__n-100 --device 0 --num_sequences 100 --sequence_seed 1729 --custom_model"
+  },
+  "server_environment": {
+    "CALVIN_ACTION_SCALE": "1.0",
+    "CALVIN_CHUNK_SIZE": "8",
+    "CALVIN_GRIPPER_MODE": "normal",
+    "CALVIN_NUM_IMAGES_IN_INPUT": "2",
+    "CALVIN_SAVE_VIDEO": "0",
+    "CALVIN_STATIC_ONLY": "0",
+    "CALVIN_USE_PROPRIO": "1",
+    "OPENVLA_TASK_SUITE": "calvin_task_d",
+    "CALVIN_NATIVE_POLICY": "1",
+    "CALVIN_ADAPTER_PATH": "",
+    "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+    "CALVIN_TASK_FREE_CALIBRATION_PATH": "/home/alam/vla_thesis/vla-deployment-benchmark/data/task_free_calibration/calibrator_calvin_axis_swap_budget640_seed201.json",
+    "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark",
+    "CALVIN_TASK_FREE_CALIBRATE_ACTION": "1",
+    "CALVIN_TASK_FREE_CALIBRATE_PROPRIO": "0",
+    "CALVIN_TASK_FREE_CALIBRATE_VISION": "0",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OPENVLA_CHECKPOINT": "/home/alam/vla_thesis/final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+  },
+  "client_environment": {
+    "CALVIN_DEPLOYMENT_ACTION_MATRIX": "[[0,-0.8,0,0,0,0],[0.65,0,0,0,0,0],[0,0,0.55,0,0,0],[0,0,0,0,-0.9,0],[0,0,0,0.7,0,0],[0,0,0,0,0,0.6]]",
+    "CALVIN_DEPLOYMENT_GRIPPER_POLARITY": "-1"
+  },
+  "preexisting_gpu_processes": [],
+  "return_code": 0,
+  "finished_utc": "2026-09-05T04:39:36.710822+00:00",
+  "memory": null,
+  "gpu_released_after_cleanup": true
+}

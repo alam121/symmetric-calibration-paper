@@ -1,0 +1,209 @@
+{
+ "robot": "franka",
+ "task": "A",
+ "policy": "expert",
+ "map": "None",
+ "success_rate": 1.0,
+ "episodes": [
+  {
+   "episode": 0,
+   "success": true,
+   "steps": 250,
+   "obj_mm": [
+    -2.0,
+    -7.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 1,
+   "success": true,
+   "steps": 257,
+   "obj_mm": [
+    -7.0,
+    -17.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 2,
+   "success": true,
+   "steps": 240,
+   "obj_mm": [
+    -1.0,
+    -5.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 3,
+   "success": true,
+   "steps": 250,
+   "obj_mm": [
+    1.0,
+    -18.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 4,
+   "success": true,
+   "steps": 251,
+   "obj_mm": [
+    -1.0,
+    7.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 5,
+   "success": true,
+   "steps": 249,
+   "obj_mm": [
+    5.0,
+    -22.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 6,
+   "success": true,
+   "steps": 260,
+   "obj_mm": [
+    -5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 7,
+   "success": true,
+   "steps": 241,
+   "obj_mm": [
+    -3.0,
+    10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 8,
+   "success": true,
+   "steps": 264,
+   "obj_mm": [
+    2.0,
+    -19.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 9,
+   "success": true,
+   "steps": 251,
+   "obj_mm": [
+    -1.0,
+    -5.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 10,
+   "success": true,
+   "steps": 251,
+   "obj_mm": [
+    3.0,
+    1.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 11,
+   "success": true,
+   "steps": 260,
+   "obj_mm": [
+    1.0,
+    15.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 12,
+   "success": true,
+   "steps": 247,
+   "obj_mm": [
+    -4.0,
+    18.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 13,
+   "success": true,
+   "steps": 247,
+   "obj_mm": [
+    -1.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 14,
+   "success": true,
+   "steps": 255,
+   "obj_mm": [
+    -6.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 15,
+   "success": true,
+   "steps": 259,
+   "obj_mm": [
+    -3.0,
+    -13.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 16,
+   "success": true,
+   "steps": 243,
+   "obj_mm": [
+    -4.0,
+    9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 17,
+   "success": true,
+   "steps": 273,
+   "obj_mm": [
+    -5.0,
+    -4.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 18,
+   "success": true,
+   "steps": 266,
+   "obj_mm": [
+    1.0,
+    -18.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 19,
+   "success": true,
+   "steps": 246,
+   "obj_mm": [
+    -7.0,
+    3.0
+   ],
+   "tilt_deg": 0.0
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+  "run_id": "franka_long_seed11",
+  "robot": "franka",
+  "beta": 0.85,
+  "seed": 11,
+  "noise_scale": 1.8813667415808457,
+  "rate_hz": 10.0,
+  "units": [
+    0.01,
+    0.05
+  ],
+  "frame": "T (task frame), TCP",
+  "box": [
+    0.05,
+    0.05,
+    0.05
+  ],
+  "max_tilt_deg": 10.0,
+  "resets": 8
+}

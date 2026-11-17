@@ -1,0 +1,209 @@
+{
+ "robot": "franka",
+ "task": "A",
+ "policy": "/home/alam/sim2real_runs/xembody/image/policy_img_A.pt",
+ "map": "None",
+ "success_rate": 0.2,
+ "episodes": [
+  {
+   "episode": 0,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -97.0,
+    -114.0
+   ],
+   "tilt_deg": 2.9
+  },
+  {
+   "episode": 1,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -71.0,
+    -133.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 2,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -98.0,
+    -119.0
+   ],
+   "tilt_deg": 0.6
+  },
+  {
+   "episode": 3,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -104.0,
+    -119.0
+   ],
+   "tilt_deg": 0.2
+  },
+  {
+   "episode": 4,
+   "success": true,
+   "steps": 295,
+   "obj_mm": [
+    -11.0,
+    2.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 5,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -102.0,
+    -117.0
+   ],
+   "tilt_deg": 0.2
+  },
+  {
+   "episode": 6,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -88.0,
+    -121.0
+   ],
+   "tilt_deg": 0.9
+  },
+  {
+   "episode": 7,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -75.0,
+    -95.0
+   ],
+   "tilt_deg": 5.7
+  },
+  {
+   "episode": 8,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -70.0,
+    -107.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 9,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    11.0,
+    10.0
+   ],
+   "tilt_deg": 2.8
+  },
+  {
+   "episode": 10,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -16.0,
+    6602.0
+   ],
+   "tilt_deg": 83.9
+  },
+  {
+   "episode": 11,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -100.0,
+    -112.0
+   ],
+   "tilt_deg": 3.1
+  },
+  {
+   "episode": 12,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -114.0,
+    -130.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 13,
+   "success": true,
+   "steps": 386,
+   "obj_mm": [
+    -37.0,
+    31.0
+   ],
+   "tilt_deg": 59.9
+  },
+  {
+   "episode": 14,
+   "success": true,
+   "steps": 352,
+   "obj_mm": [
+    -5.0,
+    31.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 15,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -74.0,
+    -126.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 16,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -100.0,
+    -117.0
+   ],
+   "tilt_deg": 0.2
+  },
+  {
+   "episode": 17,
+   "success": true,
+   "steps": 314,
+   "obj_mm": [
+    -30.0,
+    -43.0
+   ],
+   "tilt_deg": 58.2
+  },
+  {
+   "episode": 18,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -73.0,
+    -115.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 19,
+   "success": false,
+   "steps": 400,
+   "obj_mm": [
+    -91.0,
+    -115.0
+   ],
+   "tilt_deg": 3.0
+  }
+ ]
+}

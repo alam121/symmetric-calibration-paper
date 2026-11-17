@@ -1,0 +1,94 @@
+{
+  "benchmark": "Held-out sequence-seed validation of the 64-transition calibrator",
+  "dataset": "calvin/dataset/task_D_D",
+  "environments": {
+    "calvin": "calvin_venv",
+    "policy": "openvla-oft"
+  },
+  "fixed_policy_settings": {
+    "CALVIN_ACTION_SCALE": "1.0",
+    "CALVIN_CHUNK_SIZE": "8",
+    "CALVIN_GRIPPER_MODE": "normal",
+    "CALVIN_NUM_IMAGES_IN_INPUT": "2",
+    "CALVIN_SAVE_VIDEO": "0",
+    "CALVIN_STATIC_ONLY": "0",
+    "CALVIN_USE_PROPRIO": "1",
+    "OPENVLA_TASK_SUITE": "calvin_task_d"
+  },
+  "gpu": 0,
+  "methods": {
+    "budget_64": {
+      "kind": "server",
+      "description": "Frozen VLA calibrated from 64 task-free target transitions.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "/home/alam/vla_thesis/vla-deployment-benchmark/data/task_free_calibration/calibrator_calvin_axis_swap_budget64_seed201.json",
+        "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark",
+        "CALVIN_TASK_FREE_CALIBRATE_ACTION": "1",
+        "CALVIN_TASK_FREE_CALIBRATE_PROPRIO": "0",
+        "CALVIN_TASK_FREE_CALIBRATE_VISION": "0"
+      },
+      "client_environment": {
+        "CALVIN_DEPLOYMENT_ACTION_MATRIX": "[[0,-0.8,0,0,0,0],[0.65,0,0,0,0,0],[0,0,0.55,0,0,0],[0,0,0,0,-0.9,0],[0,0,0,0.7,0,0],[0,0,0,0,0,0.6]]",
+        "CALVIN_DEPLOYMENT_GRIPPER_POLARITY": "-1"
+      }
+    },
+    "budget_320": {
+      "kind": "server",
+      "description": "Frozen VLA calibrated from 320 task-free target transitions.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "/home/alam/vla_thesis/vla-deployment-benchmark/data/task_free_calibration/calibrator_calvin_axis_swap_budget320_seed201.json",
+        "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark",
+        "CALVIN_TASK_FREE_CALIBRATE_ACTION": "1",
+        "CALVIN_TASK_FREE_CALIBRATE_PROPRIO": "0",
+        "CALVIN_TASK_FREE_CALIBRATE_VISION": "0"
+      },
+      "client_environment": {
+        "CALVIN_DEPLOYMENT_ACTION_MATRIX": "[[0,-0.8,0,0,0,0],[0.65,0,0,0,0,0],[0,0,0.55,0,0,0],[0,0,0,0,-0.9,0],[0,0,0,0.7,0,0],[0,0,0,0,0,0.6]]",
+        "CALVIN_DEPLOYMENT_GRIPPER_POLARITY": "-1"
+      }
+    },
+    "budget_640": {
+      "kind": "server",
+      "description": "Frozen VLA calibrated from 640 task-free target transitions.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "/home/alam/vla_thesis/vla-deployment-benchmark/data/task_free_calibration/calibrator_calvin_axis_swap_budget640_seed201.json",
+        "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark",
+        "CALVIN_TASK_FREE_CALIBRATE_ACTION": "1",
+        "CALVIN_TASK_FREE_CALIBRATE_PROPRIO": "0",
+        "CALVIN_TASK_FREE_CALIBRATE_VISION": "0"
+      },
+      "client_environment": {
+        "CALVIN_DEPLOYMENT_ACTION_MATRIX": "[[0,-0.8,0,0,0,0],[0.65,0,0,0,0,0],[0,0,0.55,0,0,0],[0,0,0,0,-0.9,0],[0,0,0,0.7,0,0],[0,0,0,0,0,0.6]]",
+        "CALVIN_DEPLOYMENT_GRIPPER_POLARITY": "-1"
+      }
+    }
+  },
+  "minimum_independent_training_seeds": 3,
+  "num_sequences": 1000,
+  "official_sequence_seed": 0,
+  "paths": {
+    "evaluator": "calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "results_root": "vla-deployment-benchmark/results/task_free_calibration/heldout_seed2027",
+    "server": "openvla-oft/calvin_openvla_oft_server.py"
+  },
+  "protocol_version": "1.0.0",
+  "sequence_length": 5
+}

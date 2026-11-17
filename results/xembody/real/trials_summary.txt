@@ -1,0 +1,8 @@
+Real UR10e, Franka-trained policy, task R, 10 paired targets, 2026-10-28 (base_link, calib run 1 + Franka seed 1)
+direct     10/10  Wilson 95% [72, 100]%; median final 0.4 mm, 0.00 deg; median time 4.5 s
+matched    10/10  Wilson 95% [72, 100]%; median final 1.1 mm, 0.00 deg; median time 7.0 s
+mismatched 0/10  Wilson 95% [0, 28]%; all aborted at 25 deg tilt after 2.5 s (median)
+analytic   10/10  Wilson 95% [72, 100]%; median final 0.5 mm, 0.00 deg; median time 4.6 s
+matched vs direct: discordant 0/0, exact McNemar p = 1.0000
+matched vs analytic: discordant 0/0, exact McNemar p = 1.0000
+matched vs mismatched: discordant 10/0, exact McNemar p = 0.0020

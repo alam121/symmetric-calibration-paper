@@ -1,0 +1,13 @@
+base exit 0
+B1_light_dim exit 0
+A2_table_green exit 0
+B2_light_bright exit 0
+A1_table_dark exit 0
+C2_tray_yellow exit 0
+C1_object_red exit 0
+E1_distract_3 exit 0
+E2_distract_6 exit 0
+D1_layout_4cm exit 0
+D2_layout_8cm exit 0
+F_obstacle exit 0
+ALL_DONE

@@ -1,0 +1,8 @@
+*.aux
+*.log
+*.out
+*.pdf
+!analysis/figures/*.pdf
+__pycache__/
+*.pyc
+*.zip

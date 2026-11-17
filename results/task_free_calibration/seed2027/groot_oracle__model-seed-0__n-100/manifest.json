@@ -1,0 +1,86 @@
+{
+  "status": "complete",
+  "protocol_version": "1.0.0",
+  "run_id": "groot_oracle__model-seed-0__n-100",
+  "method": "groot_oracle",
+  "description": "Exact analytic inverse of the hidden interface: upper bound on any action remapping repair.",
+  "model_seed": "0",
+  "official_sequence_seed": 0,
+  "sequence_seed_used": 2027,
+  "num_sequences": 100,
+  "started_utc": "2026-09-15T23:05:40.617454+00:00",
+  "protocol": {
+    "path": "/home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/groot/groot_seed2027.generated.json",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 4148,
+    "mtime_ns": 1788974576726878742,
+    "sha256": "ed00bf404306a4689df0f0bdf85de376754be353c516d22c1e258510cb4d6599"
+  },
+  "evaluator": {
+    "path": "/home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 28181,
+    "mtime_ns": 1788592953620240975,
+    "sha256": "fde43329a2cc4f52feaba55cc60abecb574ea68175adca406065e9e712fc04be"
+  },
+  "server": {
+    "path": "/home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/groot/calvin_groot_server.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 5588,
+    "mtime_ns": 1788951992870744318,
+    "sha256": "ca96fc56eb679918ee941f1005a2c4e07c1cee2a09da3bb8b48c524412a41991"
+  },
+  "checkpoint": {
+    "path": "/home/alam/vla_thesis/final_results/groot_calvin_ft/checkpoint-20000",
+    "exists": true,
+    "kind": "directory",
+    "size_bytes": 4096,
+    "mtime_ns": 1788959131756577236
+  },
+  "repositories": {
+    "benchmark": {
+      "root": "/home/alam/vla_thesis/vla-deployment-benchmark",
+      "revision": "4251494585ebfb6ed45221f140dd11716a871a4e",
+      "dirty": true
+    },
+    "calvin": {
+      "root": "/home/alam/vla_thesis/calvin",
+      "revision": "fa03f01f19c65920e18cf37398a9ce859274af76",
+      "dirty": true
+    },
+    "openvla_oft": {
+      "root": "/home/alam/vla_thesis/openvla-oft",
+      "revision": "e4287e94541f459edc4feabc4e181f537cd569a8",
+      "dirty": true
+    }
+  },
+  "commands": {
+    "server": "conda run --no-capture-output -n gr00t python -u /home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/groot/calvin_groot_server.py",
+    "client": "conda run --no-capture-output -n calvin_venv python -u /home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py --dataset_path /home/alam/vla_thesis/calvin/dataset/task_D_D --eval_log_dir /home/alam/vla_thesis/vla-deployment-benchmark/results/task_free_calibration/seed2027/groot_oracle__model-seed-0__n-100 --device 0 --num_sequences 100 --sequence_seed 2027 --custom_model"
+  },
+  "server_environment": {
+    "CALVIN_SAVE_VIDEO": "0",
+    "GROOT_CHECKPOINT": "/home/alam/vla_thesis/final_results/groot_calvin_ft/checkpoint-20000",
+    "GROOT_EXEC_STEPS": "8",
+    "GROOT_SEED": "0",
+    "CALVIN_NATIVE_POLICY": "1",
+    "CALVIN_TASK_FREE_CALIBRATION_PATH": "",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OPENVLA_CHECKPOINT": "/home/alam/vla_thesis/final_results/groot_calvin_ft/checkpoint-20000",
+    "CALVIN_ADAPTER_PATH": "/home/alam/vla_thesis/final_results/groot_calvin_ft/checkpoint-20000"
+  },
+  "client_environment": {
+    "CALVIN_DEPLOYMENT_ACTION_MATRIX": "[[0, -0.8, 0, 0, 0, 0], [0.65, 0, 0, 0, 0, 0], [0, 0, 0.55, 0, 0, 0], [0, 0, 0, 0, -0.9, 0], [0, 0, 0, 0.7, 0, 0], [0, 0, 0, 0, 0, 0.6]]",
+    "CALVIN_DEPLOYMENT_GRIPPER_POLARITY": "-1",
+    "CALVIN_CLIENT_CALIBRATION_PATH": "/home/alam/vla_thesis/vla-deployment-benchmark/data/task_free_calibration/calibrator_oracle_axis_swap.json",
+    "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark"
+  },
+  "preexisting_gpu_processes": [],
+  "return_code": 0,
+  "finished_utc": "2026-09-15T23:25:59.013662+00:00",
+  "memory": null,
+  "gpu_released_after_cleanup": true
+}

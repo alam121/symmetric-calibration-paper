@@ -1,0 +1,73 @@
+{
+ "robot": "franka",
+ "task": "B",
+ "policy": "expert",
+ "map": "None",
+ "success_rate": 1.0,
+ "episodes": [
+  {
+   "episode": 0,
+   "success": true,
+   "steps": 318,
+   "off_mm": 0.4,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 1,
+   "success": true,
+   "steps": 216,
+   "off_mm": 0.5,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 2,
+   "success": true,
+   "steps": 212,
+   "off_mm": 0.4,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 3,
+   "success": true,
+   "steps": 243,
+   "off_mm": 0.4,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 4,
+   "success": true,
+   "steps": 233,
+   "off_mm": 0.5,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 5,
+   "success": true,
+   "steps": 220,
+   "off_mm": 0.5,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 6,
+   "success": true,
+   "steps": 299,
+   "off_mm": 0.4,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 7,
+   "success": true,
+   "steps": 215,
+   "off_mm": 0.5,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  }
+ ]
+}

@@ -1,0 +1,509 @@
+{
+ "robot": "ur10e",
+ "task": "A",
+ "policy": "/home/alam/sim2real_runs/xembody/relative/policy_A_V1_relative.pt",
+ "map": "None",
+ "success_rate": 1.0,
+ "episodes": [
+  {
+   "episode": 0,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    4.0,
+    -12.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 1,
+   "success": true,
+   "steps": 147,
+   "obj_mm": [
+    4.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 2,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    4.0,
+    -8.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 3,
+   "success": true,
+   "steps": 153,
+   "obj_mm": [
+    5.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 4,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    5.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 5,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    5.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 6,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    1.0,
+    -8.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 7,
+   "success": true,
+   "steps": 147,
+   "obj_mm": [
+    4.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 8,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 9,
+   "success": true,
+   "steps": 148,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 10,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    6.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 11,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    4.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 12,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    7.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 13,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    3.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 14,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    5.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 15,
+   "success": true,
+   "steps": 152,
+   "obj_mm": [
+    4.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 16,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    5.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 17,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    6.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 18,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    5.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 19,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    2.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 20,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 21,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    3.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 22,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    5.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 23,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    3.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 24,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    3.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 25,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    3.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 26,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    2.0,
+    -8.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 27,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 28,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 29,
+   "success": true,
+   "steps": 152,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 30,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    4.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 31,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    5.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 32,
+   "success": true,
+   "steps": 152,
+   "obj_mm": [
+    2.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 33,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    2.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 34,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    4.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 35,
+   "success": true,
+   "steps": 152,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 36,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    5.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 37,
+   "success": true,
+   "steps": 152,
+   "obj_mm": [
+    4.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 38,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    2.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 39,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    7.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 40,
+   "success": true,
+   "steps": 153,
+   "obj_mm": [
+    2.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 41,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    3.0,
+    -8.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 42,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 43,
+   "success": true,
+   "steps": 152,
+   "obj_mm": [
+    6.0,
+    -11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 44,
+   "success": true,
+   "steps": 148,
+   "obj_mm": [
+    4.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 45,
+   "success": true,
+   "steps": 147,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 46,
+   "success": true,
+   "steps": 151,
+   "obj_mm": [
+    -1.0,
+    -8.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 47,
+   "success": true,
+   "steps": 150,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 48,
+   "success": true,
+   "steps": 154,
+   "obj_mm": [
+    3.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 49,
+   "success": true,
+   "steps": 149,
+   "obj_mm": [
+    5.0,
+    -10.0
+   ],
+   "tilt_deg": 0.0
+  }
+ ]
+}

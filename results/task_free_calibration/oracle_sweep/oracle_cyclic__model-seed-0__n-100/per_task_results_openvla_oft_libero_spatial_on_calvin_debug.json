@@ -1,0 +1,176 @@
+{
+  "num_sequences": 100,
+  "average_successful_sequence_length": 2.9,
+  "per_task": {
+    "close_drawer": {
+      "attempts": 18,
+      "successes": 17,
+      "success_rate": 0.9444444444444444
+    },
+    "lift_blue_block_drawer": {
+      "attempts": 2,
+      "successes": 2,
+      "success_rate": 1.0
+    },
+    "lift_blue_block_slider": {
+      "attempts": 11,
+      "successes": 9,
+      "success_rate": 0.8181818181818182
+    },
+    "lift_blue_block_table": {
+      "attempts": 9,
+      "successes": 9,
+      "success_rate": 1.0
+    },
+    "lift_pink_block_drawer": {
+      "attempts": 1,
+      "successes": 1,
+      "success_rate": 1.0
+    },
+    "lift_pink_block_slider": {
+      "attempts": 6,
+      "successes": 5,
+      "success_rate": 0.8333333333333334
+    },
+    "lift_pink_block_table": {
+      "attempts": 17,
+      "successes": 15,
+      "success_rate": 0.8823529411764706
+    },
+    "lift_red_block_drawer": {
+      "attempts": 1,
+      "successes": 1,
+      "success_rate": 1.0
+    },
+    "lift_red_block_slider": {
+      "attempts": 7,
+      "successes": 7,
+      "success_rate": 1.0
+    },
+    "lift_red_block_table": {
+      "attempts": 14,
+      "successes": 14,
+      "success_rate": 1.0
+    },
+    "move_slider_left": {
+      "attempts": 19,
+      "successes": 18,
+      "success_rate": 0.9473684210526315
+    },
+    "move_slider_right": {
+      "attempts": 27,
+      "successes": 27,
+      "success_rate": 1.0
+    },
+    "open_drawer": {
+      "attempts": 28,
+      "successes": 27,
+      "success_rate": 0.9642857142857143
+    },
+    "place_in_drawer": {
+      "attempts": 11,
+      "successes": 11,
+      "success_rate": 1.0
+    },
+    "place_in_slider": {
+      "attempts": 26,
+      "successes": 13,
+      "success_rate": 0.5
+    },
+    "push_blue_block_left": {
+      "attempts": 6,
+      "successes": 2,
+      "success_rate": 0.3333333333333333
+    },
+    "push_blue_block_right": {
+      "attempts": 3,
+      "successes": 3,
+      "success_rate": 1.0
+    },
+    "push_into_drawer": {
+      "attempts": 6,
+      "successes": 4,
+      "success_rate": 0.6666666666666666
+    },
+    "push_pink_block_left": {
+      "attempts": 9,
+      "successes": 9,
+      "success_rate": 1.0
+    },
+    "push_pink_block_right": {
+      "attempts": 9,
+      "successes": 8,
+      "success_rate": 0.8888888888888888
+    },
+    "push_red_block_left": {
+      "attempts": 7,
+      "successes": 3,
+      "success_rate": 0.42857142857142855
+    },
+    "push_red_block_right": {
+      "attempts": 7,
+      "successes": 5,
+      "success_rate": 0.7142857142857143
+    },
+    "rotate_blue_block_left": {
+      "attempts": 4,
+      "successes": 3,
+      "success_rate": 0.75
+    },
+    "rotate_blue_block_right": {
+      "attempts": 12,
+      "successes": 1,
+      "success_rate": 0.08333333333333333
+    },
+    "rotate_pink_block_left": {
+      "attempts": 6,
+      "successes": 1,
+      "success_rate": 0.16666666666666666
+    },
+    "rotate_pink_block_right": {
+      "attempts": 4,
+      "successes": 1,
+      "success_rate": 0.25
+    },
+    "rotate_red_block_left": {
+      "attempts": 6,
+      "successes": 5,
+      "success_rate": 0.8333333333333334
+    },
+    "rotate_red_block_right": {
+      "attempts": 6,
+      "successes": 2,
+      "success_rate": 0.3333333333333333
+    },
+    "stack_block": {
+      "attempts": 15,
+      "successes": 9,
+      "success_rate": 0.6
+    },
+    "turn_off_led": {
+      "attempts": 2,
+      "successes": 2,
+      "success_rate": 1.0
+    },
+    "turn_off_lightbulb": {
+      "attempts": 12,
+      "successes": 11,
+      "success_rate": 0.9166666666666666
+    },
+    "turn_on_led": {
+      "attempts": 23,
+      "successes": 23,
+      "success_rate": 1.0
+    },
+    "turn_on_lightbulb": {
+      "attempts": 15,
+      "successes": 14,
+      "success_rate": 0.9333333333333333
+    },
+    "unstack_block": {
+      "attempts": 8,
+      "successes": 8,
+      "success_rate": 1.0
+    }
+  }
+}

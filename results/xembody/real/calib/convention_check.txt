@@ -1,0 +1,10 @@
+run1 world held-out R2 0.963
+run1 body  held-out R2 0.958
+run2 world held-out R2 0.959
+run2 body  held-out R2 0.956
+run1 world vs run2 world: E_trans 0.016  E_rot 0.010
+run1 body  vs run2 body : E_trans 0.020  E_rot 0.016
+run1 world vs run2 body : E_trans 0.018  E_rot 1.648
+run1 body  vs run2 world: E_trans 0.017  E_rot 1.641
+mismatched/matched rotation error ratio 99.7x; translation 0.018 vs 0.020
+GO

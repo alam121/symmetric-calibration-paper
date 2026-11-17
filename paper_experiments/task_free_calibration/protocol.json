@@ -1,0 +1,58 @@
+{
+  "name": "task_free_post_hoc_vla_interface_calibration_v1",
+  "research_question": "Can a frozen source VLA self-calibrate to a new deployment interface from generic target transitions without target-task demonstrations?",
+  "source_policy": "OpenVLA-OFT LIBERO checkpoint, frozen",
+  "target_setting": "CALVIN task D environment",
+  "allowed_calibration_signals": [
+    "static RGB observation",
+    "wrist RGB observation",
+    "15-D robot observation",
+    "issued smooth exploratory action",
+    "next RGB observations",
+    "next 15-D robot observation"
+  ],
+  "forbidden_calibration_signals": [
+    "language instruction",
+    "task ID",
+    "task success or reward",
+    "expert action",
+    "expert task demonstration"
+  ],
+  "calibration_minutes": [1, 5, 10, 30],
+  "calibration_seeds": [101, 102, 103],
+  "model_seeds": [0, 1, 2],
+  "controlled_mismatch_axes": [
+    "action convention and scaling",
+    "proprioception representation",
+    "static-camera observation",
+    "wrist-camera observation",
+    "all interface mismatches combined"
+  ],
+  "baselines": [
+    "direct frozen source transfer",
+    "analytic action normalization",
+    "supervised residual action adapter",
+    "supervised embodiment bridge without dynamics loss",
+    "CALVIN-native OpenVLA-OFT"
+  ],
+  "evaluation": {
+    "protocol": "official CALVIN ABC-to-D long-horizon evaluation",
+    "sequences_per_seed": 1000,
+    "primary_metric": "average successful subtasks per five-task sequence",
+    "secondary_metrics": [
+      "depth_1 through depth_5 chain success",
+      "per-task success",
+      "calibration duration",
+      "trainable parameters",
+      "inference latency"
+    ]
+  },
+  "anti_leakage": {
+    "collector_loads_language_annotations": false,
+    "collector_loads_expert_actions": false,
+    "collector_queries_task_oracle": false,
+    "collector_uses_evaluation_sequences": false,
+    "calibration_and_model_seeds_disjoint": true
+  },
+  "status": "protocol_frozen_collection_code_implemented_collection_TBA"
+}

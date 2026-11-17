@@ -1,0 +1,17 @@
+{
+ "robot": "ur10e",
+ "task": "B",
+ "policy": "/home/alam/sim2real_runs/xembody/policy_planar_B3.pt",
+ "map": "/home/alam/sim2real_runs/xembody/maps/map_matched_world.json",
+ "success_rate": 0.0,
+ "episodes": [
+  {
+   "episode": 2,
+   "success": false,
+   "steps": 400,
+   "off_mm": 3.5,
+   "yaw_err_deg": 0.4,
+   "tilt_deg": 15.9
+  }
+ ]
+}

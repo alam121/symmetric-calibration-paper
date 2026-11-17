@@ -1,0 +1,13 @@
+Environment decomposition: layout shifted out of the demo region (demos: +-2 cm), 50 paired episodes
+
+Task A   shift | Franka | UR10e matched | paired: both / only Franka / only UR10e / neither
+            0 cm | 50/50  | 50/50        | 50 / 0 / 0 / 0   (McNemar p 1.00)
+            3 cm | 24/50  | 19/50        | 19 / 5 / 0 / 26   (McNemar p 0.06)
+            6 cm |  0/50  |  0/50        | 0 / 0 / 0 / 50   (McNemar p 1.00)
+            9 cm |  0/50  |  0/50        | 0 / 0 / 0 / 50   (McNemar p 1.00)
+
+Task R   shift | Franka | UR10e matched | paired: both / only Franka / only UR10e / neither
+            0 cm | 50/50  | 50/50        | 50 / 0 / 0 / 0   (McNemar p 1.00)
+            3 cm | 48/50  | 46/50        | 46 / 2 / 0 / 2   (McNemar p 0.50)
+            6 cm | 41/50  | 33/50        | 33 / 8 / 0 / 9   (McNemar p 0.01)
+            9 cm | 27/50  | 12/50        | 9 / 18 / 3 / 20   (McNemar p 0.00)

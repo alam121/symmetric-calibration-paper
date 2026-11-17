@@ -1,0 +1,59 @@
+{
+ "robot": "ur10e",
+ "task": "A",
+ "policy": "expert",
+ "map": "/home/alam/sim2real_runs/xembody/long/maps_11/map_matched_world.json",
+ "success_rate": 1.0,
+ "episodes": [
+  {
+   "episode": 0,
+   "success": true,
+   "steps": 204,
+   "obj_mm": [
+    6.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 1,
+   "success": true,
+   "steps": 200,
+   "obj_mm": [
+    6.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 2,
+   "success": true,
+   "steps": 208,
+   "obj_mm": [
+    6.0,
+    -8.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 3,
+   "success": true,
+   "steps": 210,
+   "obj_mm": [
+    6.0,
+    -8.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 4,
+   "success": true,
+   "steps": 210,
+   "obj_mm": [
+    6.0,
+    -9.0
+   ],
+   "tilt_deg": 0.0
+  }
+ ]
+}

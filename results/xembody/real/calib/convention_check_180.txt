@@ -1,0 +1,10 @@
+run1 world R2 0.964
+run1 body  R2 0.959
+run2 world R2 0.964
+run2 body  R2 0.961
+run1 world vs run2 world: E_trans 0.010 E_rot 0.013
+run1 body  vs run2 body : E_trans 0.010 E_rot 0.014
+run1 world vs run2 body : E_trans 0.013 E_rot 1.647
+run1 body  vs run2 world: E_trans 0.014 E_rot 1.641
+ratio 119x -> GO
+180 run1 vs (base_link run1 turned 180 deg): E_trans 0.005 E_rot 0.010

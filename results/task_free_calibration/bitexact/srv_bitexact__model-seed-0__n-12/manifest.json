@@ -1,0 +1,94 @@
+{
+  "status": "complete",
+  "protocol_version": "1.0.0",
+  "run_id": "srv_bitexact__model-seed-0__n-12",
+  "method": "srv_bitexact",
+  "description": "Bit-exact analytic inverse of the power-of-two interface.",
+  "model_seed": "0",
+  "official_sequence_seed": 0,
+  "sequence_seed_used": 1729,
+  "num_sequences": 12,
+  "started_utc": "2026-09-04T22:37:33.117839+00:00",
+  "protocol": {
+    "path": "/home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/task_free_calibration/bitexact_protocol.generated.json",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 6056,
+    "mtime_ns": 1788556542162017044,
+    "sha256": "a97dc4cbb88f5305c503b56a2ad1c20dced56723439cefebeae6f376d1864d5c"
+  },
+  "evaluator": {
+    "path": "/home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 27681,
+    "mtime_ns": 1788554906301142945,
+    "sha256": "4cfe93ae38a38f4bb3becaae8c2d3fd9b6eb4be297c58382f5375db62c434152"
+  },
+  "server": {
+    "path": "/home/alam/vla_thesis/openvla-oft/calvin_openvla_oft_server.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 34907,
+    "mtime_ns": 1788556531739048731,
+    "sha256": "66873bc3b3f082570eeff34571416bb788bdf72865b39cd2b020904751d3c781"
+  },
+  "checkpoint": {
+    "path": "/home/alam/vla_thesis/final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt",
+    "exists": true,
+    "kind": "directory",
+    "size_bytes": 4096,
+    "mtime_ns": 1788561218131395818
+  },
+  "repositories": {
+    "benchmark": {
+      "root": "/home/alam/vla_thesis/vla-deployment-benchmark",
+      "revision": "4251494585ebfb6ed45221f140dd11716a871a4e",
+      "dirty": true
+    },
+    "calvin": {
+      "root": "/home/alam/vla_thesis/calvin",
+      "revision": "fa03f01f19c65920e18cf37398a9ce859274af76",
+      "dirty": true
+    },
+    "openvla_oft": {
+      "root": "/home/alam/vla_thesis/openvla-oft",
+      "revision": "e4287e94541f459edc4feabc4e181f537cd569a8",
+      "dirty": true
+    }
+  },
+  "commands": {
+    "server": "conda run --no-capture-output -n openvla-oft python -u /home/alam/vla_thesis/openvla-oft/calvin_openvla_oft_server.py",
+    "client": "conda run --no-capture-output -n calvin_venv python -u /home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py --dataset_path /home/alam/vla_thesis/calvin/dataset/task_D_D --eval_log_dir /home/alam/vla_thesis/vla-deployment-benchmark/results/task_free_calibration/bitexact/srv_bitexact__model-seed-0__n-12 --device 0 --num_sequences 12 --sequence_seed 1729 --custom_model"
+  },
+  "server_environment": {
+    "CALVIN_ACTION_SCALE": "1.0",
+    "CALVIN_CHUNK_SIZE": "8",
+    "CALVIN_GRIPPER_MODE": "normal",
+    "CALVIN_NUM_IMAGES_IN_INPUT": "2",
+    "CALVIN_SAVE_VIDEO": "0",
+    "CALVIN_STATIC_ONLY": "0",
+    "CALVIN_USE_PROPRIO": "1",
+    "OPENVLA_TASK_SUITE": "calvin_task_d",
+    "CALVIN_NATIVE_POLICY": "1",
+    "CALVIN_ADAPTER_PATH": "",
+    "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+    "CALVIN_TASK_FREE_CALIBRATION_PATH": "/home/alam/vla_thesis/vla-deployment-benchmark/data/task_free_calibration/calibrator_bitexact_pow2.json",
+    "CALVIN_TASK_FREE_CALIBRATION_CODE": "/home/alam/vla_thesis/vla-deployment-benchmark",
+    "CALVIN_TASK_FREE_CALIBRATE_ACTION": "1",
+    "CALVIN_TASK_FREE_CALIBRATE_PROPRIO": "0",
+    "CALVIN_TASK_FREE_CALIBRATE_VISION": "0",
+    "CALVIN_SERVER_TRACE": "/tmp/claude-1000/-home-alam-manipulatorsdatepalm/efbc384f-db38-4602-9c78-2bb24b608a4e/scratchpad/srv_bitexact.json",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "OPENVLA_CHECKPOINT": "/home/alam/vla_thesis/final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+  },
+  "client_environment": {
+    "CALVIN_DEPLOYMENT_ACTION_MATRIX": "[[0.0, -2.0, 0.0, 0.0, 0.0, 0.0], [4.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 2.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, -4.0, 0.0], [0.0, 0.0, 0.0, 2.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 8.0]]",
+    "CALVIN_DEPLOYMENT_GRIPPER_POLARITY": "-1"
+  },
+  "preexisting_gpu_processes": [],
+  "return_code": 0,
+  "finished_utc": "2026-09-04T22:40:37.542570+00:00",
+  "memory": null,
+  "gpu_released_after_cleanup": true
+}

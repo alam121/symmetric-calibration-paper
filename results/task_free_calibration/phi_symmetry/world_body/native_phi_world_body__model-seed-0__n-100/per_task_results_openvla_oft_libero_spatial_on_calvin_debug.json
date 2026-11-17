@@ -1,0 +1,166 @@
+{
+  "num_sequences": 100,
+  "average_successful_sequence_length": 1.14,
+  "per_task": {
+    "close_drawer": {
+      "attempts": 14,
+      "successes": 12,
+      "success_rate": 0.8571428571428571
+    },
+    "lift_blue_block_slider": {
+      "attempts": 8,
+      "successes": 1,
+      "success_rate": 0.125
+    },
+    "lift_blue_block_table": {
+      "attempts": 6,
+      "successes": 4,
+      "success_rate": 0.6666666666666666
+    },
+    "lift_pink_block_slider": {
+      "attempts": 3,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "lift_pink_block_table": {
+      "attempts": 6,
+      "successes": 5,
+      "success_rate": 0.8333333333333334
+    },
+    "lift_red_block_drawer": {
+      "attempts": 1,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "lift_red_block_slider": {
+      "attempts": 5,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "lift_red_block_table": {
+      "attempts": 10,
+      "successes": 6,
+      "success_rate": 0.6
+    },
+    "move_slider_left": {
+      "attempts": 13,
+      "successes": 12,
+      "success_rate": 0.9230769230769231
+    },
+    "move_slider_right": {
+      "attempts": 19,
+      "successes": 16,
+      "success_rate": 0.8421052631578947
+    },
+    "open_drawer": {
+      "attempts": 23,
+      "successes": 17,
+      "success_rate": 0.7391304347826086
+    },
+    "place_in_drawer": {
+      "attempts": 2,
+      "successes": 1,
+      "success_rate": 0.5
+    },
+    "place_in_slider": {
+      "attempts": 8,
+      "successes": 1,
+      "success_rate": 0.125
+    },
+    "push_blue_block_left": {
+      "attempts": 2,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "push_blue_block_right": {
+      "attempts": 2,
+      "successes": 1,
+      "success_rate": 0.5
+    },
+    "push_into_drawer": {
+      "attempts": 2,
+      "successes": 2,
+      "success_rate": 1.0
+    },
+    "push_pink_block_left": {
+      "attempts": 5,
+      "successes": 2,
+      "success_rate": 0.4
+    },
+    "push_pink_block_right": {
+      "attempts": 8,
+      "successes": 2,
+      "success_rate": 0.25
+    },
+    "push_red_block_left": {
+      "attempts": 6,
+      "successes": 3,
+      "success_rate": 0.5
+    },
+    "push_red_block_right": {
+      "attempts": 7,
+      "successes": 2,
+      "success_rate": 0.2857142857142857
+    },
+    "rotate_blue_block_left": {
+      "attempts": 1,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "rotate_blue_block_right": {
+      "attempts": 9,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "rotate_pink_block_left": {
+      "attempts": 5,
+      "successes": 1,
+      "success_rate": 0.2
+    },
+    "rotate_pink_block_right": {
+      "attempts": 3,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "rotate_red_block_left": {
+      "attempts": 2,
+      "successes": 2,
+      "success_rate": 1.0
+    },
+    "rotate_red_block_right": {
+      "attempts": 3,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "stack_block": {
+      "attempts": 6,
+      "successes": 3,
+      "success_rate": 0.5
+    },
+    "turn_off_led": {
+      "attempts": 1,
+      "successes": 0,
+      "success_rate": 0.0
+    },
+    "turn_off_lightbulb": {
+      "attempts": 7,
+      "successes": 1,
+      "success_rate": 0.14285714285714285
+    },
+    "turn_on_led": {
+      "attempts": 14,
+      "successes": 12,
+      "success_rate": 0.8571428571428571
+    },
+    "turn_on_lightbulb": {
+      "attempts": 11,
+      "successes": 6,
+      "success_rate": 0.5454545454545454
+    },
+    "unstack_block": {
+      "attempts": 2,
+      "successes": 2,
+      "success_rate": 1.0
+    }
+  }
+}

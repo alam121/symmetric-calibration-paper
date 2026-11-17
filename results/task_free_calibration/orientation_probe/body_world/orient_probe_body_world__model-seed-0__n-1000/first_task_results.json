@@ -1,0 +1,602 @@
+[
+ {
+  "official_index": 0,
+  "family": "critical",
+  "task": "rotate_blue_block_left",
+  "success": false
+ },
+ {
+  "official_index": 4,
+  "family": "tolerant",
+  "task": "push_blue_block_left",
+  "success": true
+ },
+ {
+  "official_index": 5,
+  "family": "critical",
+  "task": "rotate_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 9,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 14,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 16,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 19,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 20,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 21,
+  "family": "tolerant",
+  "task": "push_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 22,
+  "family": "tolerant",
+  "task": "push_blue_block_left",
+  "success": false
+ },
+ {
+  "official_index": 23,
+  "family": "tolerant",
+  "task": "move_slider_left",
+  "success": true
+ },
+ {
+  "official_index": 24,
+  "family": "tolerant",
+  "task": "turn_off_led",
+  "success": true
+ },
+ {
+  "official_index": 25,
+  "family": "tolerant",
+  "task": "turn_off_led",
+  "success": true
+ },
+ {
+  "official_index": 28,
+  "family": "tolerant",
+  "task": "push_red_block_left",
+  "success": true
+ },
+ {
+  "official_index": 29,
+  "family": "tolerant",
+  "task": "move_slider_left",
+  "success": true
+ },
+ {
+  "official_index": 30,
+  "family": "tolerant",
+  "task": "push_blue_block_right",
+  "success": false
+ },
+ {
+  "official_index": 31,
+  "family": "tolerant",
+  "task": "push_red_block_right",
+  "success": true
+ },
+ {
+  "official_index": 32,
+  "family": "critical",
+  "task": "rotate_red_block_left",
+  "success": false
+ },
+ {
+  "official_index": 33,
+  "family": "tolerant",
+  "task": "move_slider_left",
+  "success": true
+ },
+ {
+  "official_index": 34,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 37,
+  "family": "critical",
+  "task": "rotate_pink_block_left",
+  "success": false
+ },
+ {
+  "official_index": 38,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 39,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 40,
+  "family": "tolerant",
+  "task": "move_slider_left",
+  "success": true
+ },
+ {
+  "official_index": 41,
+  "family": "critical",
+  "task": "rotate_blue_block_left",
+  "success": false
+ },
+ {
+  "official_index": 42,
+  "family": "tolerant",
+  "task": "move_slider_left",
+  "success": true
+ },
+ {
+  "official_index": 45,
+  "family": "tolerant",
+  "task": "push_blue_block_right",
+  "success": false
+ },
+ {
+  "official_index": 47,
+  "family": "critical",
+  "task": "rotate_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 48,
+  "family": "critical",
+  "task": "rotate_blue_block_right",
+  "success": false
+ },
+ {
+  "official_index": 49,
+  "family": "tolerant",
+  "task": "move_slider_left",
+  "success": true
+ },
+ {
+  "official_index": 50,
+  "family": "critical",
+  "task": "rotate_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 52,
+  "family": "critical",
+  "task": "rotate_blue_block_right",
+  "success": false
+ },
+ {
+  "official_index": 53,
+  "family": "tolerant",
+  "task": "turn_on_led",
+  "success": true
+ },
+ {
+  "official_index": 54,
+  "family": "tolerant",
+  "task": "move_slider_left",
+  "success": true
+ },
+ {
+  "official_index": 58,
+  "family": "tolerant",
+  "task": "push_pink_block_left",
+  "success": true
+ },
+ {
+  "official_index": 60,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 63,
+  "family": "critical",
+  "task": "rotate_blue_block_left",
+  "success": false
+ },
+ {
+  "official_index": 65,
+  "family": "tolerant",
+  "task": "push_pink_block_left",
+  "success": true
+ },
+ {
+  "official_index": 66,
+  "family": "tolerant",
+  "task": "push_red_block_right",
+  "success": true
+ },
+ {
+  "official_index": 67,
+  "family": "critical",
+  "task": "rotate_blue_block_left",
+  "success": false
+ },
+ {
+  "official_index": 68,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 69,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 70,
+  "family": "tolerant",
+  "task": "push_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 71,
+  "family": "tolerant",
+  "task": "push_blue_block_left",
+  "success": false
+ },
+ {
+  "official_index": 75,
+  "family": "critical",
+  "task": "rotate_pink_block_left",
+  "success": true
+ },
+ {
+  "official_index": 76,
+  "family": "tolerant",
+  "task": "move_slider_left",
+  "success": true
+ },
+ {
+  "official_index": 77,
+  "family": "critical",
+  "task": "rotate_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 78,
+  "family": "critical",
+  "task": "rotate_blue_block_right",
+  "success": false
+ },
+ {
+  "official_index": 79,
+  "family": "critical",
+  "task": "rotate_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 82,
+  "family": "tolerant",
+  "task": "push_red_block_left",
+  "success": false
+ },
+ {
+  "official_index": 84,
+  "family": "tolerant",
+  "task": "turn_off_led",
+  "success": false
+ },
+ {
+  "official_index": 85,
+  "family": "tolerant",
+  "task": "push_red_block_right",
+  "success": true
+ },
+ {
+  "official_index": 86,
+  "family": "critical",
+  "task": "rotate_red_block_left",
+  "success": false
+ },
+ {
+  "official_index": 87,
+  "family": "tolerant",
+  "task": "push_red_block_right",
+  "success": true
+ },
+ {
+  "official_index": 89,
+  "family": "tolerant",
+  "task": "push_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 90,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 92,
+  "family": "tolerant",
+  "task": "push_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 93,
+  "family": "tolerant",
+  "task": "turn_on_led",
+  "success": true
+ },
+ {
+  "official_index": 94,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 96,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 98,
+  "family": "critical",
+  "task": "rotate_red_block_left",
+  "success": true
+ },
+ {
+  "official_index": 100,
+  "family": "tolerant",
+  "task": "turn_off_led",
+  "success": true
+ },
+ {
+  "official_index": 102,
+  "family": "tolerant",
+  "task": "turn_off_led",
+  "success": true
+ },
+ {
+  "official_index": 104,
+  "family": "tolerant",
+  "task": "move_slider_left",
+  "success": true
+ },
+ {
+  "official_index": 105,
+  "family": "tolerant",
+  "task": "push_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 107,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 108,
+  "family": "tolerant",
+  "task": "push_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 113,
+  "family": "tolerant",
+  "task": "push_pink_block_left",
+  "success": false
+ },
+ {
+  "official_index": 117,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 118,
+  "family": "tolerant",
+  "task": "push_pink_block_right",
+  "success": true
+ },
+ {
+  "official_index": 119,
+  "family": "tolerant",
+  "task": "move_slider_right",
+  "success": true
+ },
+ {
+  "official_index": 120,
+  "family": "critical",
+  "task": "rotate_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 121,
+  "family": "tolerant",
+  "task": "move_slider_left",
+  "success": true
+ },
+ {
+  "official_index": 134,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 141,
+  "family": "critical",
+  "task": "rotate_blue_block_right",
+  "success": false
+ },
+ {
+  "official_index": 143,
+  "family": "critical",
+  "task": "rotate_pink_block_left",
+  "success": false
+ },
+ {
+  "official_index": 145,
+  "family": "critical",
+  "task": "rotate_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 152,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 157,
+  "family": "critical",
+  "task": "rotate_blue_block_right",
+  "success": false
+ },
+ {
+  "official_index": 159,
+  "family": "critical",
+  "task": "rotate_red_block_left",
+  "success": true
+ },
+ {
+  "official_index": 161,
+  "family": "critical",
+  "task": "rotate_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 169,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 186,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 194,
+  "family": "critical",
+  "task": "rotate_blue_block_left",
+  "success": false
+ },
+ {
+  "official_index": 202,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 207,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 208,
+  "family": "critical",
+  "task": "rotate_pink_block_right",
+  "success": false
+ },
+ {
+  "official_index": 215,
+  "family": "critical",
+  "task": "rotate_blue_block_left",
+  "success": false
+ },
+ {
+  "official_index": 220,
+  "family": "critical",
+  "task": "rotate_red_block_left",
+  "success": false
+ },
+ {
+  "official_index": 231,
+  "family": "critical",
+  "task": "rotate_red_block_right",
+  "success": false
+ },
+ {
+  "official_index": 232,
+  "family": "critical",
+  "task": "rotate_pink_block_left",
+  "success": false
+ },
+ {
+  "official_index": 252,
+  "family": "critical",
+  "task": "rotate_red_block_left",
+  "success": false
+ },
+ {
+  "official_index": 254,
+  "family": "critical",
+  "task": "rotate_pink_block_left",
+  "success": false
+ },
+ {
+  "official_index": 262,
+  "family": "critical",
+  "task": "rotate_blue_block_right",
+  "success": false
+ },
+ {
+  "official_index": 266,
+  "family": "critical",
+  "task": "rotate_pink_block_left",
+  "success": false
+ },
+ {
+  "official_index": 272,
+  "family": "critical",
+  "task": "rotate_pink_block_left",
+  "success": false
+ },
+ {
+  "official_index": 280,
+  "family": "critical",
+  "task": "rotate_blue_block_left",
+  "success": false
+ },
+ {
+  "official_index": 295,
+  "family": "critical",
+  "task": "rotate_blue_block_left",
+  "success": false
+ },
+ {
+  "official_index": 306,
+  "family": "critical",
+  "task": "rotate_red_block_left",
+  "success": true
+ },
+ {
+  "official_index": 307,
+  "family": "critical",
+  "task": "rotate_pink_block_left",
+  "success": true
+ }
+]

@@ -1,0 +1,19 @@
+Franka-trained state policy -> UR10e (Isaac), 50 paired episodes per cell (seed 2000)
+
+A  pick cylinder -> tray
+  franka        50/50  95% CI [93%, 100%]
+  direct         0/50  95% CI [0%, 7%]
+  matched       49/50  95% CI [90%, 100%]
+  matched_body  50/50  95% CI [93%, 100%]
+  mismatched     0/50  95% CI [0%, 7%]
+  matched vs direct: discordant 49/0, exact McNemar p = 3.6e-15
+  matched vs mismatched: discordant 49/0, exact McNemar p = 3.6e-15
+
+R  TCP to pose, yaw -60..60 deg
+  franka        50/50  95% CI [93%, 100%]
+  direct         0/50  95% CI [0%, 7%]
+  matched       50/50  95% CI [93%, 100%]
+  matched_body  49/50  95% CI [90%, 100%]
+  mismatched     0/50  95% CI [0%, 7%]
+  matched vs direct: discordant 50/0, exact McNemar p = 1.8e-15
+  matched vs mismatched: discordant 50/0, exact McNemar p = 1.8e-15

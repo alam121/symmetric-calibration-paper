@@ -1,0 +1,61 @@
+{
+  "status": "complete",
+  "protocol_version": "1.0.0",
+  "run_id": "mcil_hidden_interface__model-seed-official__n-100",
+  "method": "mcil_hidden_interface",
+  "description": "MCIL behind the same hidden axis/scale/gripper shift.",
+  "model_seed": "official",
+  "official_sequence_seed": 0,
+  "sequence_seed_used": 1729,
+  "num_sequences": 100,
+  "started_utc": "2026-09-03T23:07:41.335133+00:00",
+  "protocol": {
+    "path": "/home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/task_free_calibration/mcil_family_protocol.generated.json",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 2842,
+    "mtime_ns": 1788439947090618604,
+    "sha256": "692df4cc2d5164ef16027fbdbd6663eb1b9d13be7f64621f0ab20027d9ecb63e"
+  },
+  "evaluator": {
+    "path": "/home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 22031,
+    "mtime_ns": 1788476837962414994,
+    "sha256": "be1bd1a34f35736bb52984b0fc147d63258ab65ceda585358fe5de5e84218c6e"
+  },
+  "server": null,
+  "checkpoint": null,
+  "repositories": {
+    "benchmark": {
+      "root": "/home/alam/vla_thesis/vla-deployment-benchmark",
+      "revision": "4251494585ebfb6ed45221f140dd11716a871a4e",
+      "dirty": true
+    },
+    "calvin": {
+      "root": "/home/alam/vla_thesis/calvin",
+      "revision": "fa03f01f19c65920e18cf37398a9ce859274af76",
+      "dirty": true
+    },
+    "openvla_oft": {
+      "root": "/home/alam/vla_thesis/openvla-oft",
+      "revision": "e4287e94541f459edc4feabc4e181f537cd569a8",
+      "dirty": true
+    }
+  },
+  "commands": {
+    "server": null,
+    "client": "conda run --no-capture-output -n calvin_venv python -u /home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py --dataset_path /home/alam/vla_thesis/calvin/dataset/task_D_D --eval_log_dir /home/alam/vla_thesis/vla-deployment-benchmark/results/task_free_calibration/mcil_family/mcil_hidden_interface__model-seed-official__n-100 --device 0 --num_sequences 100 --sequence_seed 1729 --train_folder /home/alam/vla_thesis/calvin/pretrained_models/D_D_static_rgb_baseline --checkpoint /home/alam/vla_thesis/calvin/pretrained_models/D_D_static_rgb_baseline/mcil_baseline.ckpt"
+  },
+  "server_environment": {},
+  "client_environment": {
+    "CALVIN_DEPLOYMENT_ACTION_MATRIX": "[[0,-0.8,0,0,0,0],[0.65,0,0,0,0,0],[0,0,0.55,0,0,0],[0,0,0,0,-0.9,0],[0,0,0,0.7,0,0],[0,0,0,0,0,0.6]]",
+    "CALVIN_DEPLOYMENT_GRIPPER_POLARITY": "-1"
+  },
+  "preexisting_gpu_processes": [],
+  "return_code": 0,
+  "finished_utc": "2026-09-03T23:11:35.115787+00:00",
+  "memory": null,
+  "gpu_released_after_cleanup": true
+}

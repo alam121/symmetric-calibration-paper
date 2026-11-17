@@ -1,0 +1,50 @@
+{
+  "benchmark": "CALVIN controlled hidden deployment-interface calibration",
+  "dataset": "calvin/dataset/task_D_D",
+  "environments": {
+    "calvin": "calvin_venv",
+    "policy": "openvla-oft"
+  },
+  "fixed_policy_settings": {
+    "CALVIN_ACTION_SCALE": "1.0",
+    "CALVIN_CHUNK_SIZE": "8",
+    "CALVIN_GRIPPER_MODE": "normal",
+    "CALVIN_NUM_IMAGES_IN_INPUT": "2",
+    "CALVIN_SAVE_VIDEO": "0",
+    "CALVIN_STATIC_ONLY": "0",
+    "CALVIN_USE_PROPRIO": "1",
+    "OPENVLA_TASK_SUITE": "calvin_task_d"
+  },
+  "gpu": 0,
+  "methods": {
+    "demoeff_ft_only_N10": {
+      "kind": "server",
+      "description": "Fine-tune only, 10 demos, labels H^-1 a*, no calibration.",
+      "model_seeds": {
+        "0": "/home/alam/vla_thesis/final_results/demo_efficiency_runs/demoeff_ft_only_N10--36000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "",
+        "CALVIN_USE_PROPRIO": "1"
+      },
+      "client_environment": {
+        "CALVIN_DEPLOYMENT_ACTION_MATRIX": "[[0, -2, 0, 0, 0, 0], [4, 0, 0, 0, 0, 0], [0, 0, 2, 0, 0, 0], [0, 0, 0, 0, -4, 0], [0, 0, 0, 2, 0, 0], [0, 0, 0, 0, 0, 8]]",
+        "CALVIN_DEPLOYMENT_GRIPPER_POLARITY": "-1"
+      },
+      "base_checkpoint": "/home/alam/vla_thesis/final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+    }
+  },
+  "minimum_independent_training_seeds": 3,
+  "num_sequences": 1000,
+  "official_sequence_seed": 0,
+  "paths": {
+    "evaluator": "calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "results_root": "vla-deployment-benchmark/results/task_free_calibration/demo_efficiency",
+    "server": "openvla-oft/calvin_openvla_oft_server.py"
+  },
+  "protocol_version": "1.0.0",
+  "sequence_length": 5
+}

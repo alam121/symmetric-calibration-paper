@@ -1,0 +1,181 @@
+{
+ "starts": 100,
+ "families": {
+  "tolerant": {
+   "n": 50,
+   "conditions": {
+    "body_body": {
+     "successes": 49,
+     "rate": 0.98,
+     "ci": [
+      0.8950455640726042,
+      0.9964607407295184
+     ]
+    },
+    "world_body": {
+     "successes": 37,
+     "rate": 0.74,
+     "ci": [
+      0.6044684273177043,
+      0.8412847250833568
+     ]
+    },
+    "body_world": {
+     "successes": 37,
+     "rate": 0.74,
+     "ci": [
+      0.6044684273177043,
+      0.8412847250833568
+     ]
+    }
+   },
+   "vs_matched": {
+    "world_body": {
+     "only_matched": 12,
+     "only_mismatched": 0,
+     "p": 0.00048828125
+    },
+    "body_world": {
+     "only_matched": 12,
+     "only_mismatched": 0,
+     "p": 0.00048828125
+    }
+   },
+   "per_task": {
+    "move_slider_left": {
+     "body_body": "10/10",
+     "world_body": "10/10",
+     "body_world": "10/10"
+    },
+    "move_slider_right": {
+     "body_body": "12/12",
+     "world_body": "12/12",
+     "body_world": "12/12"
+    },
+    "push_blue_block_left": {
+     "body_body": "3/3",
+     "world_body": "0/3",
+     "body_world": "1/3"
+    },
+    "push_blue_block_right": {
+     "body_body": "2/2",
+     "world_body": "1/2",
+     "body_world": "0/2"
+    },
+    "push_pink_block_left": {
+     "body_body": "3/3",
+     "world_body": "2/3",
+     "body_world": "2/3"
+    },
+    "push_pink_block_right": {
+     "body_body": "5/5",
+     "world_body": "1/5",
+     "body_world": "1/5"
+    },
+    "push_red_block_left": {
+     "body_body": "2/2",
+     "world_body": "1/2",
+     "body_world": "1/2"
+    },
+    "push_red_block_right": {
+     "body_body": "5/6",
+     "world_body": "4/6",
+     "body_world": "4/6"
+    },
+    "turn_off_led": {
+     "body_body": "5/5",
+     "world_body": "4/5",
+     "body_world": "4/5"
+    },
+    "turn_on_led": {
+     "body_body": "2/2",
+     "world_body": "2/2",
+     "body_world": "2/2"
+    }
+   }
+  },
+  "critical": {
+   "n": 50,
+   "conditions": {
+    "body_body": {
+     "successes": 25,
+     "rate": 0.5,
+     "ci": [
+      0.36644514313918053,
+      0.6335548568608195
+     ]
+    },
+    "world_body": {
+     "successes": 5,
+     "rate": 0.1,
+     "ci": [
+      0.04347576492370503,
+      0.2136023144078597
+     ]
+    },
+    "body_world": {
+     "successes": 5,
+     "rate": 0.1,
+     "ci": [
+      0.04347576492370503,
+      0.2136023144078597
+     ]
+    }
+   },
+   "vs_matched": {
+    "world_body": {
+     "only_matched": 20,
+     "only_mismatched": 0,
+     "p": 1.9073486328125e-06
+    },
+    "body_world": {
+     "only_matched": 21,
+     "only_mismatched": 1,
+     "p": 1.0967254638671875e-05
+    }
+   },
+   "per_task": {
+    "rotate_blue_block_left": {
+     "body_body": "8/8",
+     "world_body": "3/8",
+     "body_world": "0/8"
+    },
+    "rotate_blue_block_right": {
+     "body_body": "0/6",
+     "world_body": "0/6",
+     "body_world": "0/6"
+    },
+    "rotate_pink_block_left": {
+     "body_body": "6/8",
+     "world_body": "1/8",
+     "body_world": "2/8"
+    },
+    "rotate_pink_block_right": {
+     "body_body": "0/12",
+     "world_body": "0/12",
+     "body_world": "0/12"
+    },
+    "rotate_red_block_left": {
+     "body_body": "7/7",
+     "world_body": "1/7",
+     "body_world": "3/7"
+    },
+    "rotate_red_block_right": {
+     "body_body": "4/9",
+     "world_body": "0/9",
+     "body_world": "0/9"
+    }
+   }
+  }
+ },
+ "drop_vs_matched": {
+  "tolerant": {
+   "world_body": 0.24,
+   "body_world": 0.24
+  },
+  "critical": {
+   "world_body": 0.4,
+   "body_world": 0.4
+  }
+ }
+}

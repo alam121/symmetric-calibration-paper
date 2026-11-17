@@ -1,0 +1,6 @@
+command frame turned 180 deg about z
++x_cmd: moved [-11.0, 0.3, -0.2] mm in base_link; predicted direction [-1.0, 0.0, 0.0]; cosine +1.00
++y_cmd: moved [0.2, -11.0, -0.3] mm in base_link; predicted direction [-0.0, -1.0, 0.0]; cosine +1.00
++z_cmd: moved [-0.1, 0.4, 10.1] mm in base_link; predicted direction [0.0, 0.0, 1.0]; cosine +1.00
++rz_cmd: turned +3.10 deg about base_link z (predicted sign +)
+FRAME VERIFIED

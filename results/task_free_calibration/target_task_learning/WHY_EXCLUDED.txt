@@ -1,0 +1,42 @@
+EXCLUDED FROM THE PAPER (2026-09-15). Data retained for provenance.
+
+Question asked: does task-free calibration make LEARNING CALVIN under an
+interface mismatch as sample-efficient as learning it with the correct
+interface? Arms start from the pre-CALVIN LIBERO checkpoint (never adapted to
+CALVIN), LoRA-32, 20k steps, best-of-4 checkpoint selection applied identically.
+
+  N      naive FT   calibration+FT   delta   McNemar
+  50       11.0%        40.0%        +29.0   p=4.2e-07
+  100      34.0%         9.0%        -25.0   p=2.2e-05
+  250      75.0%        63.0%        -12.0   p=1.2e-02
+
+Two of three budgets are negative and the pattern is non-monotone, so the
+experiment does not support the hypothesis and is not clean enough to report as
+a negative either. The N=100 cell (9/0/0/2 across all checkpoints) is more
+extreme than the mechanism below predicts and was never explained; a repeat seed
+was not run.
+
+MECHANISM (measured, worth keeping):
+The calibrated arm keeps the policy in LIBERO's action convention and converts at
+deployment, so its prediction errors are pushed through M = S.pinv(T) before
+execution. That map amplifies:
+
+  S (LIBERO action->delta)  cond 12.4      T (CALVIN action->delta)  cond 2.7
+  ||M||_2 = 2.635           naive-arm amplification = 1.000
+  deployed error per unit normalised error, per dim:
+    naive       [0.713 0.567 0.477 0.389 0.394 0.671]
+    calibrated  [1.510 0.818 1.048 0.410 0.554 0.725]
+
+LIBERO's action space maps to physical motion far less isotropically than
+CALVIN's, so the policy must be MORE accurate in LIBERO coordinates to achieve
+the same accuracy at the robot. That penalty is paid on every prediction error.
+
+This is also why the RECOVERY experiments succeed: a competent policy's actions
+are already nearly correct, so amplifying a near-zero error costs nothing
+(2% -> 90%). Calibration is a repair for a competent policy, not a substitute for
+learning in the target convention.
+
+NOT affected by this exclusion: the recovery results (MCIL / OpenVLA-OFT / GR00T),
+the robustness sweep, the budget ablation, the cross-domain negative control, and
+the measured LIBERO->CALVIN interface gap (axis swap, 0.18-2.5x anisotropic
+scale, 100% gripper inversion), which stands on its own.

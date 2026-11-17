@@ -1,0 +1,12 @@
+base
+A1_table_dark --table_color 0.15 0.15 0.15
+A2_table_green --table_color 0.30 0.55 0.30
+B1_light_dim --light_intensity 800
+B2_light_bright --light_intensity 6000
+C1_object_red --obj_color 0.80 0.15 0.15
+C2_tray_yellow --tray_color 0.85 0.65 0.10
+D1_layout_4cm --env_shift 0.04
+D2_layout_8cm --env_shift 0.08
+E1_distract_3 --distractors 3 --distractor_seed 1
+E2_distract_6 --distractors 6 --distractor_seed 2
+F_obstacle --obstacle

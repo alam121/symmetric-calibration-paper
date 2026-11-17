@@ -1,0 +1,176 @@
+{
+  "benchmark": "CALVIN controlled hidden deployment-interface calibration",
+  "dataset": "calvin/dataset/task_D_D",
+  "environments": {
+    "calvin": "calvin_venv",
+    "policy": "openvla-oft"
+  },
+  "fixed_policy_settings": {
+    "CALVIN_ACTION_SCALE": "1.0",
+    "CALVIN_CHUNK_SIZE": "8",
+    "CALVIN_GRIPPER_MODE": "normal",
+    "CALVIN_NUM_IMAGES_IN_INPUT": "2",
+    "CALVIN_SAVE_VIDEO": "0",
+    "CALVIN_STATIC_ONLY": "0",
+    "CALVIN_USE_PROPRIO": "1",
+    "OPENVLA_TASK_SUITE": "calvin_task_d"
+  },
+  "gpu": 0,
+  "methods": {
+    "eps_1em8": {
+      "kind": "server",
+      "description": "Clean interface, action perturbed by epsilon=1e-8.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": ""
+      },
+      "client_environment": {
+        "CALVIN_ACTION_EPSILON": "1e-8"
+      }
+    },
+    "eps_1em6": {
+      "kind": "server",
+      "description": "Clean interface, action perturbed by epsilon=1e-6.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": ""
+      },
+      "client_environment": {
+        "CALVIN_ACTION_EPSILON": "1e-6"
+      }
+    },
+    "eps_1em4": {
+      "kind": "server",
+      "description": "Clean interface, action perturbed by epsilon=1e-4.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": ""
+      },
+      "client_environment": {
+        "CALVIN_ACTION_EPSILON": "1e-4"
+      }
+    },
+    "eps_1em2": {
+      "kind": "server",
+      "description": "Clean interface, action perturbed by epsilon=1e-2.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": ""
+      },
+      "client_environment": {
+        "CALVIN_ACTION_EPSILON": "1e-2"
+      }
+    },
+    "eps_chunk1": {
+      "kind": "server",
+      "description": "Clean interface, epsilon=1e-8, chunk K=1.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "",
+        "CALVIN_CHUNK_SIZE": "1"
+      },
+      "client_environment": {
+        "CALVIN_ACTION_EPSILON": "1e-8"
+      }
+    },
+    "eps_chunk2": {
+      "kind": "server",
+      "description": "Clean interface, epsilon=1e-8, chunk K=2.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "",
+        "CALVIN_CHUNK_SIZE": "2"
+      },
+      "client_environment": {
+        "CALVIN_ACTION_EPSILON": "1e-8"
+      }
+    },
+    "eps_chunk4": {
+      "kind": "server",
+      "description": "Clean interface, epsilon=1e-8, chunk K=4.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "",
+        "CALVIN_CHUNK_SIZE": "4"
+      },
+      "client_environment": {
+        "CALVIN_ACTION_EPSILON": "1e-8"
+      }
+    },
+    "clean_chunk1": {
+      "kind": "server",
+      "description": "Clean interface, no perturbation, chunk K=1.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "",
+        "CALVIN_CHUNK_SIZE": "1"
+      },
+      "client_environment": {}
+    },
+    "clean_chunk4": {
+      "kind": "server",
+      "description": "Clean interface, no perturbation, chunk K=4.",
+      "model_seeds": {
+        "0": "final_results/calvin_native_oft_runs/calvin_task_d_native_oft_lora32--35000_chkpt"
+      },
+      "environment": {
+        "CALVIN_NATIVE_POLICY": "1",
+        "CALVIN_ADAPTER_PATH": "",
+        "CALVIN_EMBODIMENT_BRIDGE_PATH": "",
+        "CALVIN_TASK_FREE_CALIBRATION_PATH": "",
+        "CALVIN_CHUNK_SIZE": "4"
+      },
+      "client_environment": {}
+    }
+  },
+  "minimum_independent_training_seeds": 3,
+  "num_sequences": 1000,
+  "official_sequence_seed": 0,
+  "paths": {
+    "evaluator": "calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "results_root": "vla-deployment-benchmark/results/task_free_calibration/sensitivity",
+    "server": "openvla-oft/calvin_openvla_oft_server.py"
+  },
+  "protocol_version": "1.0.0",
+  "sequence_length": 5
+}

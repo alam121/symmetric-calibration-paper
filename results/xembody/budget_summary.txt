@@ -1,0 +1,15 @@
+Calibration budget sweep: matched UR10e success /50 for 3 independent pairs (seeds 11/12/13)
+task A
+  N=   16 transitions: [46, 0, 0]
+  N=   32 transitions: [41, 50, 46]
+  N=   64 transitions: [49, 48, 49]
+  N=  128 transitions: [50, 49, 49]
+  N=  300 transitions: [50, 50, 49]
+  N= 1500 transitions: [50, 50, 50]
+task R
+  N=   16 transitions: [28, 50, 6]   median pos 7.4 mm, yaw 0.50 deg
+  N=   32 transitions: [50, 50, 50]   median pos 2.4 mm, yaw 0.20 deg
+  N=   64 transitions: [50, 50, 50]   median pos 1.1 mm, yaw 0.10 deg
+  N=  128 transitions: [50, 50, 50]   median pos 1.0 mm, yaw 0.10 deg
+  N=  300 transitions: [50, 50, 50]   median pos 0.7 mm, yaw 0.10 deg
+  N= 1500 transitions: [50, 50, 50]   median pos 0.5 mm, yaw 0.10 deg

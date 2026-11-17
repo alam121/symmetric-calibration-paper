@@ -1,0 +1,59 @@
+{
+ "robot": "franka",
+ "task": "A",
+ "policy": "expert",
+ "map": "None",
+ "success_rate": 1.0,
+ "episodes": [
+  {
+   "episode": 0,
+   "success": true,
+   "steps": 217,
+   "obj_mm": [
+    -2.0,
+    11.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 1,
+   "success": true,
+   "steps": 213,
+   "obj_mm": [
+    -1.0,
+    -12.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 2,
+   "success": true,
+   "steps": 220,
+   "obj_mm": [
+    -1.0,
+    -12.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 3,
+   "success": true,
+   "steps": 222,
+   "obj_mm": [
+    -1.0,
+    -12.0
+   ],
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 4,
+   "success": true,
+   "steps": 222,
+   "obj_mm": [
+    -1.0,
+    -12.0
+   ],
+   "tilt_deg": 0.0
+  }
+ ]
+}

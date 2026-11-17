@@ -1,0 +1,89 @@
+{
+ "robot": "ur10e",
+ "task": "B",
+ "policy": "/home/alam/sim2real_runs/xembody/policy_planar_B2.pt",
+ "map": "/home/alam/sim2real_runs/xembody/maps/map_matched_world.json",
+ "success_rate": 0.1,
+ "episodes": [
+  {
+   "episode": 0,
+   "success": false,
+   "steps": 400,
+   "off_mm": 4.9,
+   "yaw_err_deg": 0.8,
+   "tilt_deg": 25.0
+  },
+  {
+   "episode": 1,
+   "success": false,
+   "steps": 400,
+   "off_mm": 143.9,
+   "yaw_err_deg": 20.8,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 2,
+   "success": false,
+   "steps": 400,
+   "off_mm": 224.4,
+   "yaw_err_deg": 32.7,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 3,
+   "success": false,
+   "steps": 400,
+   "off_mm": 124.0,
+   "yaw_err_deg": 62.4,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 4,
+   "success": false,
+   "steps": 400,
+   "off_mm": 130.5,
+   "yaw_err_deg": 34.2,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 5,
+   "success": true,
+   "steps": 400,
+   "off_mm": 3.1,
+   "yaw_err_deg": 0.3,
+   "tilt_deg": 12.1
+  },
+  {
+   "episode": 6,
+   "success": false,
+   "steps": 400,
+   "off_mm": 2.2,
+   "yaw_err_deg": 0.1,
+   "tilt_deg": 15.1
+  },
+  {
+   "episode": 7,
+   "success": false,
+   "steps": 400,
+   "off_mm": 3.9,
+   "yaw_err_deg": 0.3,
+   "tilt_deg": 16.4
+  },
+  {
+   "episode": 8,
+   "success": false,
+   "steps": 400,
+   "off_mm": 112.5,
+   "yaw_err_deg": 39.8,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 9,
+   "success": false,
+   "steps": 400,
+   "off_mm": 118.2,
+   "yaw_err_deg": 18.6,
+   "tilt_deg": 0.0
+  }
+ ]
+}

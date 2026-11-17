@@ -1,0 +1,11 @@
+Real UR10e, Franka-trained policy, task R, 10 paired targets, 2026-10-28.
+Robot commands interpreted in base_link turned 180 deg about z (UR "base"); calibration xr180 run 1 + Franka seed 1.
+Aborts: tilt > 12 deg, TCP outside x[-0.23,0.13] y[-0.07,0.13] z[0.07,0.21].
+direct          0/10  Wilson 95% [0, 28]%; aborts {'box': 10} after median 0.5 s, max 6.3 cm from start
+matched         10/10  Wilson 95% [72, 100]%; median final 1.1 mm, 0.00 deg, 7.0 s
+analytic_exact  10/10  Wilson 95% [72, 100]%; median final 0.4 mm, 0.00 deg, 4.6 s
+mismatched      0/10  Wilson 95% [0, 28]%; aborts {'tilt': 10} after median 1.5 s, max 9.4 cm from start
+matched vs direct: discordant 10/0, exact McNemar p = 0.0020
+analytic_exact vs direct: discordant 10/0, exact McNemar p = 0.0020
+matched vs mismatched: discordant 10/0, exact McNemar p = 0.0020
+matched vs analytic_exact: discordant 0/0, exact McNemar p = 1.0000

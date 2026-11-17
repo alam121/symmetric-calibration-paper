@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "protocol_version": "1.0.0",
+  "run_id": "mcil_clean__model-seed-official__n-100",
+  "method": "mcil_clean",
+  "description": "Official MCIL under its original actuator interface.",
+  "model_seed": "official",
+  "official_sequence_seed": 0,
+  "sequence_seed_used": 1729,
+  "num_sequences": 100,
+  "started_utc": "2026-09-03T17:52:39.471678+00:00",
+  "protocol": {
+    "path": "/home/alam/vla_thesis/vla-deployment-benchmark/paper_experiments/task_free_calibration/mcil_family_protocol.generated.json",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 2842,
+    "mtime_ns": 1788439947090618604,
+    "sha256": "692df4cc2d5164ef16027fbdbd6663eb1b9d13be7f64621f0ab20027d9ecb63e"
+  },
+  "evaluator": {
+    "path": "/home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py",
+    "exists": true,
+    "kind": "file",
+    "size_bytes": 21003,
+    "mtime_ns": 1788439149585406085,
+    "sha256": "2c830f0aac15e2268382f7349394c38dd300d830057862a77f9d27e4822c2991"
+  },
+  "server": null,
+  "checkpoint": null,
+  "repositories": {
+    "benchmark": {
+      "root": "/home/alam/vla_thesis/vla-deployment-benchmark",
+      "revision": "4251494585ebfb6ed45221f140dd11716a871a4e",
+      "dirty": true
+    },
+    "calvin": {
+      "root": "/home/alam/vla_thesis/calvin",
+      "revision": "fa03f01f19c65920e18cf37398a9ce859274af76",
+      "dirty": true
+    },
+    "openvla_oft": {
+      "root": "/home/alam/vla_thesis/openvla-oft",
+      "revision": "e4287e94541f459edc4feabc4e181f537cd569a8",
+      "dirty": true
+    }
+  },
+  "commands": {
+    "server": null,
+    "client": "conda run --no-capture-output -n calvin_venv python -u /home/alam/vla_thesis/calvin/calvin_models/calvin_agent/evaluation/evaluate_policy.py --dataset_path /home/alam/vla_thesis/calvin/dataset/task_D_D --eval_log_dir /home/alam/vla_thesis/vla-deployment-benchmark/results/task_free_calibration/mcil_family/mcil_clean__model-seed-official__n-100 --device 0 --num_sequences 100 --sequence_seed 1729 --train_folder /home/alam/vla_thesis/calvin/pretrained_models/D_D_static_rgb_baseline --checkpoint /home/alam/vla_thesis/calvin/pretrained_models/D_D_static_rgb_baseline/mcil_baseline.ckpt"
+  },
+  "server_environment": {},
+  "client_environment": {},
+  "preexisting_gpu_processes": [],
+  "return_code": 0,
+  "finished_utc": "2026-09-03T17:55:47.704078+00:00",
+  "memory": null,
+  "gpu_released_after_cleanup": true
+}

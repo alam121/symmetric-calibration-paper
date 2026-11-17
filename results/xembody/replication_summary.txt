@@ -1,0 +1,15 @@
+Replication over 3 independent calibration pairs (1500 transitions each side), 50 paired episodes per cell
+
+Task A
+  matched_world  50/50 | 50/50 | 50/50
+  matched_body   50/50 | 50/50 | 50/50
+  mismatched     0/50 | 0/50 | 0/50
+
+Task R
+  matched_world  50/50 (pos 0.9 mm, yaw 0.1 deg) | 50/50 (pos 0.8 mm, yaw 0.1 deg) | 50/50 (pos 0.9 mm, yaw 0.1 deg)
+  matched_body   50/50 (pos 0.9 mm, yaw 0.1 deg) | 50/50 (pos 0.8 mm, yaw 0.1 deg) | 50/50 (pos 0.9 mm, yaw 0.1 deg)
+  mismatched     0/50 (pos 314.9 mm, yaw 136.4 deg) | 0/50 (pos 330.5 mm, yaw 141.2 deg) | 0/50 (pos 316.4 mm, yaw 139.1 deg)
+
+Box task (B), calibration pair 11, 50 paired episodes
+  expert  franka 49/50 (knocked over at pickup 0) | direct 0/50 (knocked over at pickup 0) | matched 50/50 (knocked over at pickup 0) | mismatched 0/50 (knocked over at pickup 43)
+  clone   franka 35/50 (knocked over at pickup 4) | direct 0/50 (knocked over at pickup 0) | matched 21/50 (knocked over at pickup 0) | mismatched 0/50 (knocked over at pickup 43)

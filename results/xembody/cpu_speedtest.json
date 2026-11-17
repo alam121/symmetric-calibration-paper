@@ -1,0 +1,33 @@
+{
+ "robot": "franka",
+ "task": "B",
+ "policy": "expert",
+ "map": "None",
+ "success_rate": 1.0,
+ "episodes": [
+  {
+   "episode": 0,
+   "success": true,
+   "steps": 318,
+   "off_mm": 0.6,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 1,
+   "success": true,
+   "steps": 218,
+   "off_mm": 0.5,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  },
+  {
+   "episode": 2,
+   "success": true,
+   "steps": 212,
+   "off_mm": 0.5,
+   "yaw_err_deg": 0.0,
+   "tilt_deg": 0.0
+  }
+ ]
+}
